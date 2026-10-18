@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>PokéAlbum dei Piccoli Allenatori</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PokéAlbum">
+<meta name="theme-color" content="#3b4cca">
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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">
+<style>
+/* =========================================================
+   STILE GENERALE
+   ========================================================= */
+:root{
+  --giallo:#ffcb05; --giallo-sc:#d9a400;
+  --blu:#3b4cca; --blu-sc:#2a3590;
+  --rosso:#ee1515; --rosso-sc:#a80d0d;
+  --verde:#3fbf5a; --verde-sc:#26893d;
+  --ink:#23284f; --carta:#fffdf2;
+  --font:ui-rounded,"SF Pro Rounded","Nunito","Baloo 2","Trebuchet MS","Comic Sans MS",system-ui,sans-serif;
+  --safe-t:env(safe-area-inset-top,0px); --safe-b:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+html,body{margin:0;height:100%;overflow:hidden;font-family:var(--font);color:var(--ink);background:#bfe6ff;touch-action:manipulation;overscroll-behavior:none}
+body{font-size:20px}
+button{font-family:inherit;color:inherit;cursor:pointer;touch-action:manipulation}
+img{-webkit-user-drag:none;user-drag:none}
+
+.screen{position:fixed;inset:0;display:none;flex-direction:column;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;
+  padding:calc(14px + var(--safe-t)) 16px calc(16px + var(--safe-b));
+  background:linear-gradient(180deg,#8fd6ff 0%,#c9f0ff 55%,#fff6c9 100%)}
+.screen.active{display:flex;animation:entra .35s ease-out}
+@keyframes entra{from{opacity:0;transform:scale(.98)}to{opacity:1;transform:none}}
+
+/* Pulsanti grandi, a misura di dito */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;min-width:56px;padding:12px 26px;
+  font-size:1.35rem;font-weight:900;letter-spacing:.3px;border-radius:999px;border:4px solid var(--blu-sc);
+  background:var(--giallo);color:var(--ink);box-shadow:0 7px 0 var(--giallo-sc),0 12px 18px rgba(0,0,0,.18);
+  transition:transform .08s,box-shadow .08s;text-align:center}
+.btn:active{transform:translateY(5px);box-shadow:0 2px 0 var(--giallo-sc),0 4px 8px rgba(0,0,0,.18)}
+.btn.blu{background:var(--blu);color:#fff;border-color:var(--blu-sc);box-shadow:0 7px 0 var(--blu-sc),0 12px 18px rgba(0,0,0,.18)}
+.btn.rosso{background:var(--rosso);color:#fff;border-color:var(--rosso-sc);box-shadow:0 7px 0 var(--rosso-sc),0 12px 18px rgba(0,0,0,.18)}
+.btn.verde{background:var(--verde);color:#fff;border-color:var(--verde-sc);box-shadow:0 7px 0 var(--verde-sc),0 12px 18px rgba(0,0,0,.18)}
+.btn.grande{font-size:2rem;padding:20px 40px;min-height:88px}
+.btn.piccolo{font-size:1.1rem;padding:8px 18px;min-height:48px;box-shadow:0 5px 0 var(--giallo-sc)}
+.btn.blu.piccolo{box-shadow:0 5px 0 var(--blu-sc)}
+.btn.tondo{width:56px;padding:0;font-size:1.6rem}
+.btn[disabled]{filter:grayscale(.7);opacity:.7}
+
+.barra{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px;flex:0 0 auto}
+.barra h2{margin:0;font-size:1.7rem;font-weight:900;text-shadow:0 2px 0 #fff;text-align:center;flex:1}
+.pill{display:inline-flex;align-items:center;gap:8px;background:#fff;border:3px solid var(--blu);border-radius:999px;padding:6px 14px;font-weight:900;font-size:1.05rem;min-height:48px}
+
+/* Uscite (energia) */
+.energia{display:inline-flex;align-items:center;gap:6px}
+.ball{width:28px;height:28px;border-radius:50%;border:3px solid var(--ink);flex:0 0 auto;
+  background:linear-gradient(180deg,var(--rosso) 0 44%,var(--ink) 44% 56%,#fff 56% 100%);position:relative;transition:transform .3s}
+.ball::after{content:"";position:absolute;left:50%;top:50%;width:9px;height:9px;margin:-4.5px;border-radius:50%;background:#fff;border:2px solid var(--ink)}
+.ball.vuota{filter:grayscale(1) opacity(.35)}
+
+/* =========================================================
+   HOME
+   ========================================================= */
+#home{align-items:center;justify-content:center;text-align:center;gap:16px;
+  background:radial-gradient(circle at 50% 0,#fff7b0 0,transparent 45%),linear-gradient(180deg,#58b8ff 0%,#9fe0ff 50%,#c9f5a8 100%)}
+.titolo{margin:0;font-size:clamp(2.3rem,7vw,4.6rem);line-height:1.02;font-weight:1000;color:var(--giallo);
+  -webkit-text-stroke:3px var(--blu);paint-order:stroke fill;text-shadow:0 6px 0 var(--blu-sc),0 12px 22px rgba(0,0,0,.25);
+  animation:fluttua 3s ease-in-out infinite;padding:0 8px}
+.titolo small{display:block;font-size:.42em;color:#fff;-webkit-text-stroke:2px var(--blu);margin-top:8px;letter-spacing:1px}
+@keyframes fluttua{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-8px) rotate(1deg)}}
+.home-ball{width:96px;height:96px;border-radius:50%;border:6px solid var(--ink);position:relative;
+  background:linear-gradient(180deg,var(--rosso) 0 42%,var(--ink) 42% 58%,#fff 58% 100%);
+  box-shadow:inset -8px -8px 0 rgba(0,0,0,.12),0 12px 20px rgba(0,0,0,.25);animation:rotola 4s ease-in-out infinite}
+.home-ball::after{content:"";position:absolute;left:50%;top:50%;width:32px;height:32px;margin:-16px;border-radius:50%;background:#fff;border:6px solid var(--ink)}
+@keyframes rotola{0%,100%{transform:rotate(-12deg) translateX(-12px)}50%{transform:rotate(12deg) translateX(12px)}}
+.progresso{width:min(560px,92%);background:#fff;border:4px solid var(--blu);border-radius:26px;padding:14px 20px;box-shadow:0 8px 0 var(--blu-sc)}
+.progresso .testo{font-size:1.5rem;font-weight:900}
+.progresso .rango{font-size:1.05rem;font-weight:800;color:var(--blu);margin-top:2px}
+.barra-prog{height:22px;border-radius:99px;background:#dfe6ff;margin-top:10px;overflow:hidden;border:3px solid var(--blu)}
+.barra-prog i{display:block;height:100%;width:0;background:repeating-linear-gradient(45deg,var(--giallo) 0 14px,#ffe46b 14px 28px);transition:width .8s cubic-bezier(.2,.9,.3,1.2);animation:scorrevole 1.2s linear infinite;background-size:40px 40px}
+@keyframes scorrevole{to{background-position:40px 0}}
+.home-bottoni{display:flex;flex-direction:column;gap:18px;align-items:center;width:100%}
+.home-extra{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.home-fondo{position:absolute;left:0;right:0;bottom:0;height:70px;pointer-events:none;
+  background:radial-gradient(60px 40px at 10% 100%,#6fcf5c 98%,transparent) ,radial-gradient(90px 50px at 40% 100%,#58bd4a 98%,transparent),radial-gradient(70px 44px at 75% 100%,#6fcf5c 98%,transparent),radial-gradient(60px 36px at 95% 100%,#58bd4a 98%,transparent)}
+
+/* =========================================================
+   MAPPA
+   ========================================================= */
+#mappa{align-items:center}
+.mappa-box{position:relative;width:min(100%,calc((100dvh - 190px) * 1.33));max-width:1000px;aspect-ratio:4/3;border-radius:34px;border:6px solid #fff;
+  box-shadow:0 10px 0 var(--blu-sc),0 18px 30px rgba(0,0,0,.25);overflow:hidden;flex:0 0 auto;
+  background:radial-gradient(ellipse 34% 26% at 50% 104%,#35b4f2 0 98%,transparent 100%),
+    radial-gradient(ellipse 30% 22% at 88% 28%,#c8b69a 0 98%,transparent 100%),
+    radial-gradient(ellipse 28% 30% at 15% 30%,#4fb85a 0 98%,transparent 100%),
+    linear-gradient(180deg,#a8e6ff 0,#d2f5c2 35%,#8bd86d 100%)}
+.mappa-path{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.mappa-path polyline{fill:none;stroke:#fff;stroke-width:1.4;stroke-dasharray:2.4 2.4;stroke-linecap:round;opacity:.85;animation:formiche 6s linear infinite}
+@keyframes formiche{to{stroke-dashoffset:-30}}
+.nuvola{position:absolute;font-size:3rem;opacity:.9;animation:nuvola 40s linear infinite;pointer-events:none;top:3%}
+.nuvola.b{top:48%;font-size:2.2rem;animation-duration:55s;animation-delay:-20s}
+@keyframes nuvola{from{transform:translateX(-120px)}to{transform:translateX(calc(min(100vw,1000px) + 40px))}}
+.luogo{position:absolute;width:29%;aspect-ratio:1/.92;transform:translate(-50%,-50%);border-radius:30px;border:5px solid #fff;padding:0;overflow:hidden;
+  box-shadow:0 8px 0 rgba(0,0,0,.28),0 14px 18px rgba(0,0,0,.2);display:flex;flex-direction:column;align-items:center;justify-content:center;
+  transition:transform .12s;min-width:100px;min-height:96px}
+.luogo:active{transform:translate(-50%,-46%) scale(.96)}
+.luogo .emj{font-size:clamp(2rem,6.2vw,3.8rem);filter:drop-shadow(0 4px 0 rgba(0,0,0,.2));position:relative;z-index:2;animation:salta 2.6s ease-in-out infinite}
+@keyframes salta{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.luogo .lbl{position:absolute;left:0;right:0;bottom:0;z-index:3;background:rgba(35,40,79,.88);color:#fff;font-weight:900;font-size:clamp(.8rem,2.4vw,1.15rem);padding:4px 2px;line-height:1.1}
+.luogo .sub{position:absolute;top:4px;left:0;right:0;text-align:center;z-index:3;font-size:clamp(.6rem,1.6vw,.8rem);font-weight:900;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.6)}
+.luogo.bloccato{filter:grayscale(.85) brightness(.85)}
+.luogo.bloccato .emj{animation:none}
+.luogo .lucchetto{position:absolute;z-index:4;top:6px;right:6px;font-size:1.5rem}
+.luogo.nuovo{animation:pulsa 1.2s ease-in-out 3}
+@keyframes pulsa{50%{box-shadow:0 0 0 14px rgba(255,203,5,.7),0 8px 0 rgba(0,0,0,.28)}}
+.l-bosco{background:linear-gradient(180deg,#8ee27a,#3f9d4b)}
+.l-citta{background:linear-gradient(180deg,#9ab8ff,#5b72d6)}
+.l-grotta{background:linear-gradient(180deg,#8c7aa8,#3d2f5c)}
+.l-spiaggia{background:linear-gradient(180deg,#ffe9a0 0,#ffd27a 55%,#4fc3f7 56%,#1e88e5)}
+.l-montagna{background:linear-gradient(180deg,#d6e6f5,#8a9bb0)}
+.l-laboratorio{background:linear-gradient(180deg,#fff4a8,#ffb347)}
+/* Animazioni d'atmosfera dentro ai luoghi */
+.atm{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:1}
+.atm span{position:absolute;left:var(--x);top:-14%;font-size:var(--s,1.2rem);opacity:.95;animation:cadi var(--t,5s) linear var(--d,0s) infinite}
+@keyframes cadi{from{transform:translate(0,0) rotate(0)}to{transform:translate(var(--dx,24px),135px) rotate(300deg)}}
+.atm span.brilla{top:var(--y);animation:brilla var(--t,2s) ease-in-out var(--d,0s) infinite}
+@keyframes brilla{0%,100%{transform:scale(.2);opacity:0}50%{transform:scale(1.2);opacity:1}}
+.atm span.sale{top:auto;bottom:-10%;animation:sale var(--t,4s) ease-in var(--d,0s) infinite}
+@keyframes sale{from{transform:translate(0,0) scale(.5);opacity:.9}to{transform:translate(var(--dx,10px),-130px) scale(1.1);opacity:0}}
+.atm span.onda{top:auto;bottom:6%;font-size:2.2rem;left:-10%;animation:onda var(--t,4s) ease-in-out var(--d,0s) infinite alternate}
+@keyframes onda{from{transform:translateX(0)}to{transform:translateX(70%)}}
+.atm span.scorri{top:var(--y);left:-20%;animation:scorri var(--t,9s) linear var(--d,0s) infinite}
+@keyframes scorri{to{transform:translateX(160px)}}
+/* Effetti sbloccati sulla mappa */
+.fx{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:5}
+.fx span{position:absolute;left:var(--x);top:-10%;font-size:var(--s,1.6rem);animation:cadi var(--t,6s) linear var(--d,0s) infinite}
+.fx .arcobaleno{left:50%;top:-4%;font-size:min(14vw,7rem);transform:translateX(-50%);animation:none;opacity:.85;z-index:0}
+.fx span.palloncino{top:auto;bottom:-12%;animation:sale var(--t,8s) linear var(--d,0s) infinite;font-size:2.2rem}
+.fx span.pika{top:auto;bottom:2%;left:-10%;font-size:2.6rem;animation:corri 9s linear infinite}
+@keyframes corri{to{transform:translateX(calc(min(100vw,1000px) + 60px))}}
+.fx span.fuoco{top:var(--y);animation:brilla var(--t,2s) ease-in-out var(--d,0s) infinite;font-size:2.2rem}
+
+/* =========================================================
+   GIOCO (introduzione, minigiochi, risultato)
+   ========================================================= */
+#gioco{align-items:center}
+#gioco .corpo{width:100%;max-width:860px;flex:1;display:flex;flex-direction:column;align-items:center;gap:12px;min-height:0}
+.intro{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;margin:auto 0}
+.intro h3{margin:0;font-size:2rem;font-weight:1000}
+.apparso{font-size:1.4rem;font-weight:900;background:#fff;border:4px solid var(--blu);border-radius:999px;padding:8px 22px;animation:rimbalza 1s ease-in-out infinite}
+@keyframes rimbalza{50%{transform:scale(1.06)}}
+.regole{background:#fff;border:4px dashed var(--blu);border-radius:22px;padding:12px 20px;font-size:1.25rem;font-weight:800;max-width:560px}
+.art{position:relative;width:var(--w,260px);aspect-ratio:1.6/1;border-radius:22px;border:5px solid #fff;overflow:hidden;
+  background-color:#dfe8ff;background-size:116% auto;background-position:50% 16%;background-repeat:no-repeat;box-shadow:0 8px 0 rgba(0,0,0,.2)}
+.art .fb{display:none;position:absolute;inset:0;align-items:center;justify-content:center;font-size:calc(var(--w,260px) * .32);background:var(--tc,#ddd)}
+.art.noart .fb{display:flex}
+.art.selvatico{animation:selvatico 1.6s ease-in-out infinite}
+@keyframes selvatico{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-12px) rotate(2deg)}}
+.hud{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;align-items:center;font-weight:900;font-size:1.2rem}
+.msg{min-height:2.2em;font-size:1.5rem;font-weight:1000;text-align:center;display:flex;align-items:center;justify-content:center}
+.msg.ok{color:#17883a}.msg.no{color:#c4231c}
+
+/* Memory */
+.mem-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;width:100%;max-width:760px;perspective:900px}
+@media (orientation:portrait){.mem-grid{grid-template-columns:repeat(3,1fr);max-width:560px}}
+.tessera{position:relative;aspect-ratio:1/1;border:0;padding:0;background:none;transform-style:preserve-3d;transition:transform .45s}
+.tessera.girata,.tessera.trovata{transform:rotateY(180deg)}
+.tessera .f{position:absolute;inset:0;border-radius:20px;backface-visibility:hidden;-webkit-backface-visibility:hidden;border:4px solid #fff;overflow:hidden;box-shadow:0 6px 0 rgba(0,0,0,.25)}
+.tessera .dorso{background:radial-gradient(circle at 50% 50%,#fff 0 14%,var(--ink) 15% 20%,transparent 21%),linear-gradient(180deg,var(--rosso) 0 47%,var(--ink) 47% 53%,#fff 53% 100%)}
+.tessera .fronte{transform:rotateY(180deg);background:#fff;display:flex;flex-direction:column}
+.tessera .fronte .art{--w:100%;width:100%;flex:1;aspect-ratio:auto;border:0;border-radius:0;box-shadow:none;background-size:150% auto;background-position:50% 13%}
+.tessera .fronte b{font-size:.8rem;line-height:1.2;padding:2px;text-align:center;background:var(--giallo)}
+.tessera.trovata .fronte{box-shadow:inset 0 0 0 5px var(--verde)}
+.tessera.trovata{animation:festa .6s .4s}
+@keyframes festa{50%{transform:rotateY(180deg) scale(1.1)}}
+
+/* Quiz */
+.quiz-q{background:#fff;border:4px solid var(--blu);border-radius:24px;padding:14px 20px;font-size:1.6rem;font-weight:900;text-align:center;width:100%}
+.quiz-opz{display:grid;grid-template-columns:1fr 1fr;gap:14px;width:100%}
+@media (max-width:560px){.quiz-opz{grid-template-columns:1fr}}
+.opz{min-height:72px;font-size:1.4rem;font-weight:900;background:#fff;border:4px solid var(--blu);border-radius:22px;box-shadow:0 6px 0 var(--blu-sc);padding:10px;transition:transform .08s}
+.opz:active{transform:translateY(4px);box-shadow:0 2px 0 var(--blu-sc)}
+.opz.giusta{background:#b6f2c3;border-color:var(--verde-sc);box-shadow:0 6px 0 var(--verde-sc);animation:festa2 .5s}
+.opz.sbagliata{background:#ffc9c4;border-color:var(--rosso-sc);box-shadow:0 6px 0 var(--rosso-sc);animation:scuoti .4s}
+@keyframes festa2{50%{transform:scale(1.06)}}
+@keyframes scuoti{25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
+
+/* Lancia la Poké Ball */
+.campo{position:relative;width:min(100%,520px);aspect-ratio:1/1;max-height:52dvh;margin:0 auto;display:flex;align-items:center;justify-content:center;
+  border-radius:30px;background:radial-gradient(circle,#4a3a6a 0,#2a2040 70%);border:5px solid #fff;overflow:hidden;box-shadow:0 8px 0 rgba(0,0,0,.25)}
+.campo .art{--w:46%;position:relative;z-index:2}
+.bersaglio{position:absolute;left:50%;top:50%;width:46%;aspect-ratio:1;margin:-23% 0 0 -23%;border-radius:50%;border:5px dashed #fff;opacity:.9;z-index:3}
+.anello{position:absolute;left:50%;top:50%;width:46%;aspect-ratio:1;margin:-23% 0 0 -23%;border-radius:50%;border:12px solid #ff5252;z-index:4;will-change:transform;box-shadow:0 0 18px currentColor}
+.anello.giallo{border-color:#ffd740}.anello.verde{border-color:#3dff7a}
+.lancio{position:absolute;left:50%;bottom:-12%;width:15%;aspect-ratio:1;margin-left:-7.5%;z-index:6;border-radius:50%;border:4px solid var(--ink);
+  background:linear-gradient(180deg,var(--rosso) 0 44%,var(--ink) 44% 56%,#fff 56% 100%);opacity:0}
+.lancio.vola{animation:vola .55s ease-in forwards}
+@keyframes vola{0%{opacity:1;bottom:-12%;transform:scale(1.3) rotate(0)}100%{opacity:1;bottom:46%;transform:scale(.6) rotate(540deg)}}
+.big-tocca{width:min(100%,520px);min-height:96px;font-size:2rem}
+
+/* Puzzle */
+.puz-wrap{display:flex;gap:18px;align-items:flex-start;justify-content:center;flex-wrap:wrap}
+.puz{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;width:min(88vw,calc((100dvh - 330px) * .716),440px);aspect-ratio:63/88;background:var(--ink);border:5px solid var(--ink);border-radius:16px;overflow:hidden;box-shadow:0 8px 0 rgba(0,0,0,.25)}
+.pezzo{border:0;padding:0;border-radius:0;background-size:300% 300%;background-color:#ddd;position:relative;transition:transform .2s,filter .2s}
+.pezzo.sel{transform:scale(.92);outline:5px solid var(--giallo);outline-offset:-5px;z-index:2;filter:brightness(1.15)}
+.pezzo.giusto::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 3px rgba(63,191,90,.9)}
+.modello{width:150px;aspect-ratio:63/88;border-radius:10px;border:4px solid #fff;background-size:100% 100%;background-color:#ddd;box-shadow:0 5px 0 rgba(0,0,0,.25)}
+
+/* Simon */
+.simon{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:12px;width:min(88vw,calc(100dvh - 330px),460px);aspect-ratio:1/1;padding:12px;background:var(--ink);border-radius:50%}
+.pad{border:0;min-height:48px;opacity:.55;transition:opacity .08s,transform .08s,filter .08s;border-radius:100% 12px 12px 12px}
+.pad:nth-child(2){border-radius:12px 100% 12px 12px}.pad:nth-child(3){border-radius:12px 12px 12px 100%}.pad:nth-child(4){border-radius:12px 12px 100% 12px}
+.pad.acceso{opacity:1;transform:scale(1.05);filter:brightness(1.4) drop-shadow(0 0 18px #fff)}
+.pad.r{background:#ee1515}.pad.b{background:#2f6bff}.pad.v{background:#25b84a}.pad.g{background:#ffd21f}
+.simon-centro{position:absolute;left:50%;top:50%;width:34%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:#fff;border:6px solid var(--ink);
+  display:flex;align-items:center;justify-content:center;text-align:center;font-weight:1000;font-size:1.1rem;line-height:1.05;pointer-events:none}
+
+/* Risultato */
+.risultato{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;margin:auto 0;width:100%}
+.stelle{font-size:3rem;letter-spacing:6px}
+.stelle i{font-style:normal;display:inline-block;animation:stella .5s both}
+.stelle i.spenta{filter:grayscale(1) opacity(.35)}
+@keyframes stella{from{transform:scale(0) rotate(-90deg)}to{transform:scale(1) rotate(0)}}
+.pokeball-grande{width:130px;height:130px;border-radius:50%;border:7px solid var(--ink);position:relative;
+  background:linear-gradient(180deg,var(--rosso) 0 42%,var(--ink) 42% 58%,#fff 58% 100%);animation:scuotiBall 1.5s ease-in-out}
+.pokeball-grande::after{content:"";position:absolute;left:50%;top:50%;width:42px;height:42px;margin:-21px;border-radius:50%;background:#fff;border:7px solid var(--ink)}
+@keyframes scuotiBall{0%{transform:translateY(-120px) rotate(0)}25%{transform:translateY(0) rotate(0)}35%{transform:rotate(-25deg)}50%{transform:rotate(25deg)}65%{transform:rotate(-25deg)}80%{transform:rotate(15deg)}100%{transform:rotate(0)}}
+.scappa{font-size:6rem;animation:scappa 1.2s ease-in forwards}
+@keyframes scappa{to{transform:translateX(120%) scale(.5);opacity:0}}
+.badge-rar{display:inline-block;font-weight:1000;font-size:1.3rem;padding:6px 18px;border-radius:999px;border:3px solid #fff;color:#fff;box-shadow:0 4px 0 rgba(0,0,0,.25)}
+.risultato .azioni{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:6px}
+
+/* =========================================================
+   CARTE (album + risultato + viewer)
+   ========================================================= */
+.carta{position:relative;aspect-ratio:63/88;border-radius:7%/5%;background:#ccd3e6;overflow:hidden;box-shadow:0 5px 0 rgba(0,0,0,.25);transition:transform .15s}
+.carta img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.carta.sil{background:linear-gradient(135deg,#aeb4c4,#8d94a8);display:flex;align-items:center;justify-content:center;flex-direction:column;color:#fff}
+.carta.sil b{font-size:2.6rem;text-shadow:0 3px 0 rgba(0,0,0,.25)}
+.carta.sil small{font-weight:900;font-size:.95rem;opacity:.9}
+.r-comune{--rc:#7bc47f}.r-non-comune{--rc:#4aa3ff}.r-rara{--rc:#ffc400}.r-ultra-rara{--rc:#ff4fd8}
+.cella{background:none;border:0;padding:0;display:flex;flex-direction:column;gap:6px;text-align:center;min-height:48px}
+.cella:active .carta{transform:scale(.96)}
+.cella .carta{outline:4px solid var(--rc,transparent);outline-offset:-1px}
+.cella.ultra .carta::after,.viewer-carta.ultra::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.55) 45%,transparent 60%);background-size:250% 100%;animation:luccica 2.6s linear infinite;pointer-events:none;mix-blend-mode:overlay}
+.cella.ultra .carta{outline-color:transparent;box-shadow:0 0 0 4px #ff4fd8,0 0 14px 3px #ffe14d,0 5px 0 rgba(0,0,0,.25);animation:arcobaleno 3s linear infinite}
+@keyframes luccica{from{background-position:150% 0}to{background-position:-100% 0}}
+@keyframes arcobaleno{0%{box-shadow:0 0 0 4px #ff4f4f,0 0 14px 3px #ffe14d,0 5px 0 rgba(0,0,0,.25)}33%{box-shadow:0 0 0 4px #4fa8ff,0 0 14px 3px #6dff9c,0 5px 0 rgba(0,0,0,.25)}66%{box-shadow:0 0 0 4px #c44fff,0 0 14px 3px #ff9ad5,0 5px 0 rgba(0,0,0,.25)}100%{box-shadow:0 0 0 4px #ff4f4f,0 0 14px 3px #ffe14d,0 5px 0 rgba(0,0,0,.25)}}
+.cella .nome{font-weight:900;font-size:1rem;line-height:1.1}
+.cella .meta{font-size:.85rem;font-weight:900;display:flex;gap:5px;justify-content:center;align-items:center;flex-wrap:wrap}
+.chip-tipo{display:inline-flex;align-items:center;gap:3px;padding:1px 8px;border-radius:99px;color:#fff;font-weight:900;font-size:.8rem;text-shadow:0 1px 1px rgba(0,0,0,.4);background:var(--tc,#999)}
+.chip-rar{display:inline-flex;padding:1px 8px;border-radius:99px;color:#fff;font-weight:900;font-size:.8rem;background:var(--rc,#999);text-shadow:0 1px 1px rgba(0,0,0,.4)}
+.copie{position:absolute;top:4px;right:4px;z-index:3;background:var(--rosso);color:#fff;font-weight:1000;font-size:.85rem;border-radius:99px;padding:2px 8px;border:2px solid #fff}
+.nuova-tag{position:absolute;top:4px;left:4px;z-index:3;background:var(--verde);color:#fff;font-weight:1000;font-size:.8rem;border-radius:99px;padding:2px 8px;border:2px solid #fff}
+
+#album .griglia{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:18px 14px;padding:6px 4px 30px}
+.filtri{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 10px;flex:0 0 auto;-webkit-overflow-scrolling:touch}
+.chip{flex:0 0 auto;min-height:48px;padding:6px 16px;border-radius:99px;border:3px solid var(--blu);background:#fff;font-weight:900;font-size:1.05rem;white-space:nowrap}
+.chip.on{background:var(--blu);color:#fff}
+.vuoto{text-align:center;font-weight:900;font-size:1.3rem;padding:40px 10px}
+
+/* =========================================================
+   MODALI, VIEWER, TOAST, CONFETTI
+   ========================================================= */
+.overlay{position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;background:rgba(20,25,60,.7);padding:calc(16px + var(--safe-t)) 16px calc(16px + var(--safe-b));backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+.overlay.on{display:flex;animation:entra .25s}
+.modale{background:var(--carta);border:6px solid var(--blu);border-radius:30px;padding:22px 24px;max-width:560px;width:100%;max-height:92dvh;overflow-y:auto;text-align:center;box-shadow:0 10px 0 var(--blu-sc);animation:pop .35s cubic-bezier(.2,1.4,.4,1)}
+@keyframes pop{from{transform:scale(.6);opacity:0}to{transform:none;opacity:1}}
+.modale h3{margin:0 0 8px;font-size:1.9rem;font-weight:1000;color:var(--blu)}
+.modale p{font-size:1.2rem;font-weight:700;margin:8px 0;line-height:1.35}
+.modale .bottoni{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+.modale .grande-emoji{font-size:4rem}
+.puntini{display:flex;gap:8px;justify-content:center;margin-top:8px}
+.puntini i{width:12px;height:12px;border-radius:50%;background:#cdd3f5}.puntini i.on{background:var(--blu)}
+.lista-premi{text-align:left;display:flex;flex-direction:column;gap:8px;margin-top:8px}
+.premio{display:flex;gap:12px;align-items:center;background:#fff;border:3px solid #cdd3f5;border-radius:18px;padding:8px 12px;font-weight:800;font-size:1.05rem}
+.premio.on{border-color:var(--verde);background:#eaffef}
+.premio .e{font-size:1.8rem}.premio small{display:block;font-weight:700;opacity:.75}
+.riga-imp{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:10px 0;font-weight:900}
+
+#viewer{flex-direction:column;gap:12px;background:radial-gradient(circle,rgba(40,50,110,.92),rgba(10,12,35,.96))}
+.viewer-carta{position:relative;height:min(68dvh,calc(88vw * 1.397),760px);aspect-ratio:63/88;border-radius:5%/3.6%;background:#ccd3e6;overflow:hidden;
+  box-shadow:0 0 0 5px var(--rc,#fff),0 0 40px 6px var(--rc,#fff),0 20px 40px rgba(0,0,0,.5);animation:apriCarta .7s cubic-bezier(.2,1.1,.3,1);transition:transform .1s;transform-style:preserve-3d}
+.viewer-carta img{width:100%;height:100%;object-fit:cover;display:block}
+@keyframes apriCarta{0%{transform:scale(.2) rotateY(180deg);opacity:0}100%{transform:none;opacity:1}}
+.viewer-info{display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;color:#fff;font-weight:900;font-size:1.2rem;text-align:center}
+.viewer-info b{font-size:1.5rem}
+.viewer-riga{display:flex;gap:14px;align-items:center;justify-content:center}
+
+#toast{position:fixed;left:50%;bottom:calc(26px + var(--safe-b));transform:translate(-50%,40px);background:var(--ink);color:#fff;font-weight:900;font-size:1.25rem;padding:14px 24px;border-radius:99px;z-index:90;opacity:0;pointer-events:none;transition:all .3s;max-width:92vw;text-align:center;border:4px solid #fff}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+#confetti{position:fixed;inset:0;z-index:80;pointer-events:none;width:100%;height:100%}
+
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+
+<!-- ============ HOME ============ -->
+<section id="home" class="screen active">
+  <div class="home-ball"></div>
+  <h1 class="titolo">PokéAlbum<small>dei Piccoli Allenatori</small></h1>
+  <div class="progresso">
+    <div class="testo" id="homeContatore">Hai 0 carte su 0</div>
+    <div class="rango" id="homeRango"></div>
+    <div class="barra-prog"><i id="homeBarra"></i></div>
+  </div>
+  <div class="pill" title="Uscite a caccia di oggi"><span>Uscite di oggi</span><span class="energia" id="homeEnergia"></span></div>
+  <div class="home-bottoni">
+    <button class="btn grande rosso" id="btnCaccia">🎯 Vai a Caccia!</button>
+    <button class="btn grande blu" id="btnAlbum">📖 Il mio Album</button>
+  </div>
+  <div class="home-extra">
+    <button class="btn piccolo tondo" id="btnTutorial" aria-label="Come si gioca">❓</button>
+    <button class="btn piccolo tondo" id="btnPremi" aria-label="Premi">🏆</button>
+    <button class="btn piccolo tondo" id="btnSuono" aria-label="Suoni">🔊</button>
+    <button class="btn piccolo tondo" id="btnImp" aria-label="Impostazioni">⚙️</button>
+  </div>
+  <div class="home-fondo"></div>
+</section>
+
+<!-- ============ MAPPA ============ -->
+<section id="mappa" class="screen">
+  <div class="barra">
+    <button class="btn blu piccolo" data-vai="home">⬅ Home</button>
+    <h2>Dove vuoi andare?</h2>
+    <div class="pill"><span class="energia" id="mappaEnergia"></span></div>
+  </div>
+  <div class="mappa-box" id="mappaBox">
+    <svg class="mappa-path" viewBox="0 0 100 100" preserveAspectRatio="none"><polyline points="18,26 50,20 82,26 82,72 50,78 18,72 18,26"/></svg>
+    <div class="nuvola">☁️</div><div class="nuvola b">☁️</div>
+    <div class="fx" id="mappaFx"></div>
+  </div>
+</section>
+
+<!-- ============ GIOCO ============ -->
+<section id="gioco" class="screen">
+  <div class="barra">
+    <button class="btn blu piccolo" id="btnEsciGioco">⬅ Esci</button>
+    <h2 id="giocoTitolo"></h2>
+    <div class="pill"><span class="energia" id="giocoEnergia"></span></div>
+  </div>
+  <div class="corpo" id="giocoCorpo"></div>
+</section>
+
+<!-- ============ ALBUM ============ -->
+<section id="album" class="screen">
+  <div class="barra">
+    <button class="btn blu piccolo" data-vai="home">⬅ Home</button>
+    <h2>Il mio Album</h2>
+    <div class="pill" id="albumConta">0/0</div>
+  </div>
+  <div class="filtri" id="filtriRar"></div>
+  <div class="filtri" id="filtriTipo"></div>
+  <div class="griglia" id="albumGriglia"></div>
+</section>
+
+<div id="modale" class="overlay"></div>
+<div id="viewer" class="overlay"></div>
+<div id="toast"></div>
+<canvas id="confetti"></canvas>
+
+<script>
+"use strict";
+/* =========================================================
+   DATI CARTE
+   Fonte: TCGdex (https://api.tcgdex.net/v2/it/...) — carte in italiano.
+   Per ogni carta: id, n=nome, d=numero Pokédex (1-151), r=rarità del gioco,
+   t=tipo, s=set, i=percorso immagine italiana (base: https://assets.tcgdex.net/it/ + i + "/low.webp" o "/high.webp").
+   Per aggiungere carte basta aggiungere righe a questo array.
+   ========================================================= */
+const CARTE = [
+  {"id":"sv03.5-001","n":"Bulbasaur","d":1,"r":"comune","t":"Erba","s":"151","i":"sv/sv03.5/001"},
+  {"id":"sv07-143","n":"Bulbasaur","d":1,"r":"rara","t":"Erba","s":"Corona Astrale","i":"sv/sv07/143"},
+  {"id":"me01-134","n":"Ivysaur","d":2,"r":"rara","t":"Erba","s":"Megaevoluzione","i":"me/me01/134"},
+  {"id":"swsh10.5-002","n":"Ivysaur","d":2,"r":"non-comune","t":"Erba","s":"Pokémon GO","i":"swsh/swsh10.5/002"},
+  {"id":"sm3.5-3","n":"Venusaur","d":3,"r":"non-comune","t":"Erba","s":"Leggende Iridescenti","i":"sm/sm3.5/3"},
+  {"id":"xy1-1","n":"Venusaur EX","d":3,"r":"ultra-rara","t":"Erba","s":"XY","i":"xy/xy1/1"},
+  {"id":"sv04.5-109","n":"Charmander","d":4,"r":"ultra-rara","t":"Fuoco","s":"Destino di Paldea","i":"sv/sv04.5/109"},
+  {"id":"svp-047","n":"Charmander","d":4,"r":"non-comune","t":"Fuoco","s":"SVP Black Star Promos","i":"sv/svp/047"},
+  {"id":"me02.5-021","n":"Charmeleon","d":5,"r":"non-comune","t":"Fuoco","s":"Ascesa Eroica","i":"me/me02.5/021"},
+  {"id":"sv03.5-169","n":"Charmeleon","d":5,"r":"rara","t":"Fuoco","s":"151","i":"sv/sv03.5/169"},
+  {"id":"sv04.5-110","n":"Charmeleon","d":5,"r":"ultra-rara","t":"Fuoco","s":"Destino di Paldea","i":"sv/sv04.5/110"},
+  {"id":"sm9-14","n":"Charizard","d":6,"r":"rara","t":"Fuoco","s":"Gioco di Squadra","i":"sm/sm9/14"},
+  {"id":"svp-161","n":"Charizard-ex","d":6,"r":"non-comune","t":"Fuoco","s":"SVP Black Star Promos","i":"sv/svp/161"},
+  {"id":"swsh9-154","n":"Charizard V","d":6,"r":"ultra-rara","t":"Fuoco","s":"Astri Lucenti","i":"swsh/swsh9/154"},
+  {"id":"sv03.5-170","n":"Squirtle","d":7,"r":"rara","t":"Acqua","s":"151","i":"sv/sv03.5/170"},
+  {"id":"svp-048","n":"Squirtle","d":7,"r":"non-comune","t":"Acqua","s":"SVP Black Star Promos","i":"sv/svp/048"},
+  {"id":"sm10-34","n":"Wartortle","d":8,"r":"non-comune","t":"Acqua","s":"Legami Inossidabili","i":"sm/sm10/34"},
+  {"id":"sv03.5-171","n":"Wartortle","d":8,"r":"rara","t":"Acqua","s":"151","i":"sv/sv03.5/171"},
+  {"id":"swsh10.5-017","n":"Blastoise","d":9,"r":"rara","t":"Acqua","s":"Pokémon GO","i":"swsh/swsh10.5/017"},
+  {"id":"swshp-SWSH101","n":"Blastoise V","d":9,"r":"non-comune","t":"Acqua","s":"SPSC Promo","i":"swsh/swshp/SWSH101"},
+  {"id":"xy12-22","n":"M Blastoise EX","d":9,"r":"ultra-rara","t":"Acqua","s":"Evoluzioni","i":"xy/xy12/22"},
+  {"id":"sm10-2","n":"Caterpie","d":10,"r":"comune","t":"Erba","s":"Legami Inossidabili","i":"sm/sm10/2"},
+  {"id":"sv03.5-172","n":"Caterpie","d":10,"r":"rara","t":"Erba","s":"151","i":"sv/sv03.5/172"},
+  {"id":"sm3-2","n":"Metapod","d":11,"r":"non-comune","t":"Erba","s":"Ombre Infuocate","i":"sm/sm3/2"},
+  {"id":"xy2-2","n":"Metapod","d":11,"r":"non-comune","t":"Erba","s":"Fuoco Infernale","i":"xy/xy2/2"},
+  {"id":"sm3-3","n":"Butterfree","d":12,"r":"rara","t":"Erba","s":"Ombre Infuocate","i":"sm/sm3/3"},
+  {"id":"sv03.5-012","n":"Butterfree","d":12,"r":"non-comune","t":"Erba","s":"151","i":"sv/sv03.5/012"},
+  {"id":"swsh3-177","n":"Butterfree V","d":12,"r":"ultra-rara","t":"Erba","s":"Fiamme Oscure","i":"swsh/swsh3/177"},
+  {"id":"sv03.5-013","n":"Weedle","d":13,"r":"comune","t":"Erba","s":"151","i":"sv/sv03.5/013"},
+  {"id":"swsh4-1","n":"Weedle","d":13,"r":"comune","t":"Erba","s":"Voltaggio Sfolgorante","i":"swsh/swsh4/1"},
+  {"id":"xy1-4","n":"Kakuna","d":14,"r":"non-comune","t":"Erba","s":"XY","i":"xy/xy1/4"},
+  {"id":"xy5-2","n":"Kakuna","d":14,"r":"non-comune","t":"Erba","s":"Scontro Primordiale","i":"xy/xy5/2"},
+  {"id":"me04-003","n":"Beedrill-ex","d":15,"r":"ultra-rara","t":"Erba","s":"Caos Nascente","i":"me/me04/003"},
+  {"id":"swsh6-3","n":"Beedrill","d":15,"r":"rara","t":"Erba","s":"Regno Glaciale","i":"swsh/swsh6/3"},
+  {"id":"sv03-207","n":"Pidgey","d":16,"r":"rara","t":"Incolore","s":"Ossidiana Infuocata","i":"sv/sv03/207"},
+  {"id":"sv04.5-196","n":"Pidgey","d":16,"r":"ultra-rara","t":"Incolore","s":"Destino di Paldea","i":"sv/sv04.5/196"},
+  {"id":"sv03-208","n":"Pidgeotto","d":17,"r":"rara","t":"Incolore","s":"Ossidiana Infuocata","i":"sv/sv03/208"},
+  {"id":"sv03.5-017","n":"Pidgeotto","d":17,"r":"comune","t":"Incolore","s":"151","i":"sv/sv03.5/017"},
+  {"id":"sv04.5-197","n":"Pidgeotto","d":17,"r":"ultra-rara","t":"Incolore","s":"Destino di Paldea","i":"sv/sv04.5/197"},
+  {"id":"sm9-124","n":"Pidgeot","d":18,"r":"rara","t":"Incolore","s":"Gioco di Squadra","i":"sm/sm9/124"},
+  {"id":"sv03.5-018","n":"Pidgeot","d":18,"r":"non-comune","t":"Incolore","s":"151","i":"sv/sv03.5/018"},
+  {"id":"xy12-64","n":"Pidgeot EX","d":18,"r":"ultra-rara","t":"Incolore","s":"Evoluzioni","i":"xy/xy12/64"},
+  {"id":"sv03.5-019","n":"Rattata","d":19,"r":"comune","t":"Incolore","s":"151","i":"sv/sv03.5/019"},
+  {"id":"xy9-87","n":"Rattata","d":19,"r":"comune","t":"Incolore","s":"Turbo Crash","i":"xy/xy9/87"},
+  {"id":"sm1-77","n":"Raticate di Alola","d":20,"r":"non-comune","t":"Oscurità","s":"Sole e Luna","i":"sm/sm1/77"},
+  {"id":"xy9-88","n":"Raticate","d":20,"r":"rara","t":"Incolore","s":"Turbo Crash","i":"xy/xy9/88"},
+  {"id":"xy9-89","n":"Raticate TURBO","d":20,"r":"ultra-rara","t":"Incolore","s":"Turbo Crash","i":"xy/xy9/89"},
+  {"id":"me01-102","n":"Spearow","d":21,"r":"comune","t":"Incolore","s":"Megaevoluzione","i":"me/me01/102"},
+  {"id":"me01-151","n":"Spearow","d":21,"r":"rara","t":"Incolore","s":"Megaevoluzione","i":"me/me01/151"},
+  {"id":"sm1-98","n":"Fearow","d":22,"r":"comune","t":"Incolore","s":"Sole e Luna","i":"sm/sm1/98"},
+  {"id":"xy6-66","n":"Fearow","d":22,"r":"non-comune","t":"Incolore","s":"Furie Volanti","i":"xy/xy6/66"},
+  {"id":"sv10-112","n":"Ekans del Team Rocket","d":23,"r":"comune","t":"Oscurità","s":"Rivali Predestinati","i":"sv/sv10/112"},
+  {"id":"swsh3.5-33","n":"Ekans","d":23,"r":"comune","t":"Oscurità","s":"Futuri Campioni","i":"swsh/swsh3.5/33"},
+  {"id":"sv03.5-024","n":"Arbok-ex","d":24,"r":"ultra-rara","t":"Oscurità","s":"151","i":"sv/sv03.5/024"},
+  {"id":"sv05-176","n":"Arbok","d":24,"r":"rara","t":"Oscurità","s":"Cronoforze","i":"sv/sv05/176"},
+  {"id":"sv10-113","n":"Arbok del Team Rocket","d":24,"r":"non-comune","t":"Oscurità","s":"Rivali Predestinati","i":"sv/sv10/113"},
+  {"id":"30th-032","n":"Pikachu","d":25,"r":"rara","t":"Lampo","s":"30° Anniversario","i":"me/30th/032"},
+  {"id":"sv02-063","n":"Pikachu-ex","d":25,"r":"ultra-rara","t":"Lampo","s":"Evoluzioni a Paldea","i":"sv/sv02/063"},
+  {"id":"xy6-20","n":"Pikachu","d":25,"r":"comune","t":"Lampo","s":"Furie Volanti","i":"xy/xy6/20"},
+  {"id":"sv03.5-026","n":"Raichu","d":26,"r":"rara","t":"Lampo","s":"151","i":"sv/sv03.5/026"},
+  {"id":"xy3-28","n":"Raichu","d":26,"r":"non-comune","t":"Lampo","s":"Colpi Furiosi","i":"xy/xy3/28"},
+  {"id":"xy8-50","n":"Raichu TURBO","d":26,"r":"ultra-rara","t":"Lampo","s":"Turbo Blitz","i":"xy/xy8/50"},
+  {"id":"sm10-83","n":"Sandshrew","d":27,"r":"comune","t":"Lotta","s":"Legami Inossidabili","i":"sm/sm10/83"},
+  {"id":"sv03.5-027","n":"Sandshrew","d":27,"r":"comune","t":"Lotta","s":"151","i":"sv/sv03.5/027"},
+  {"id":"sm12-138","n":"Sandslash di Alola","d":28,"r":"rara","t":"Metallo","s":"Eclissi Cosmica","i":"sm/sm12/138"},
+  {"id":"sv06-098","n":"Sandslash","d":28,"r":"non-comune","t":"Lotta","s":"Crepuscolo Mascherato","i":"sv/sv06/098"},
+  {"id":"sv03.5-029","n":"Nidoran♀","d":29,"r":"comune","t":"Oscurità","s":"151","i":"sv/sv03.5/029"},
+  {"id":"xy5-66","n":"Nidoran♀","d":29,"r":"comune","t":"Psico","s":"Scontro Primordiale","i":"xy/xy5/66"},
+  {"id":"30th-088","n":"Nidorina","d":30,"r":"comune","t":"Oscurità","s":"30° Anniversario","i":"me/30th/088"},
+  {"id":"xy5-67","n":"Nidorina","d":30,"r":"non-comune","t":"Psico","s":"Scontro Primordiale","i":"xy/xy5/67"},
+  {"id":"sv10-116","n":"Nidoqueen del Team Rocket","d":31,"r":"non-comune","t":"Oscurità","s":"Rivali Predestinati","i":"sv/sv10/116"},
+  {"id":"xy5-69","n":"Nidoqueen","d":31,"r":"rara","t":"Psico","s":"Scontro Primordiale","i":"xy/xy5/69"},
+  {"id":"sm9-57","n":"Nidoran♂","d":32,"r":"comune","t":"Psico","s":"Gioco di Squadra","i":"sm/sm9/57"},
+  {"id":"sv10-117","n":"Nidoran♂ del Team Rocket","d":32,"r":"comune","t":"Oscurità","s":"Rivali Predestinati","i":"sv/sv10/117"},
+  {"id":"sm9-58","n":"Nidorino","d":33,"r":"non-comune","t":"Psico","s":"Gioco di Squadra","i":"sm/sm9/58"},
+  {"id":"sv03.5-034","n":"Nidoking","d":34,"r":"rara","t":"Oscurità","s":"151","i":"sv/sv03.5/034"},
+  {"id":"sv10-119","n":"Nidoking-ex del Team Rocket","d":34,"r":"ultra-rara","t":"Oscurità","s":"Rivali Predestinati","i":"sv/sv10/119"},
+  {"id":"sv09-184","n":"Clefairy-ex di Lylia","d":35,"r":"ultra-rara","t":"Psico","s":"Avventure Insieme","i":"sv/sv09/184"},
+  {"id":"swsh11-062","n":"Clefairy","d":35,"r":"comune","t":"Psico","s":"Origine Perduta","i":"swsh/swsh11/062"},
+  {"id":"xy12-63","n":"Clefairy","d":35,"r":"rara","t":"Folletto","s":"Evoluzioni","i":"xy/xy12/63"},
+  {"id":"sv06-079","n":"Clefable","d":36,"r":"non-comune","t":"Psico","s":"Crepuscolo Mascherato","i":"sv/sv06/079"},
+  {"id":"swsh9-054","n":"Clefable","d":36,"r":"rara","t":"Psico","s":"Astri Lucenti","i":"swsh/swsh9/054"},
+  {"id":"sv08-016","n":"Vulpix","d":37,"r":"comune","t":"Fuoco","s":"Scintille Folgoranti","i":"sv/sv08/016"},
+  {"id":"swsh12-033","n":"Vulpix di Alola V","d":37,"r":"ultra-rara","t":"Acqua","s":"Tempesta Argentata","i":"swsh/swsh12/033"},
+  {"id":"me04-009","n":"Ninetales","d":38,"r":"non-comune","t":"Fuoco","s":"Caos Nascente","i":"me/me04/009"},
+  {"id":"xy12-15","n":"Ninetales","d":38,"r":"rara","t":"Fuoco","s":"Evoluzioni","i":"xy/xy12/15"},
+  {"id":"tk-xy-w-25","n":"Jigglypuff","d":39,"r":"comune","t":"Folletto","s":"XY trainer Kit (Wigglytuff)","i":"tk/tk-xy-w/25"},
+  {"id":"xy1-87","n":"Jigglypuff","d":39,"r":"comune","t":"Folletto","s":"XY","i":"xy/xy1/87"},
+  {"id":"sm8-134","n":"Wigglytuff","d":40,"r":"rara","t":"Folletto","s":"Tuoni Perduti","i":"sm/sm8/134"},
+  {"id":"sv03.5-187","n":"Wigglytuff-ex","d":40,"r":"ultra-rara","t":"Incolore","s":"151","i":"sv/sv03.5/187"},
+  {"id":"swsh8-111","n":"Wigglytuff","d":40,"r":"non-comune","t":"Psico","s":"Colpo Fusione","i":"swsh/swsh8/111"},
+  {"id":"sv06.5-027","n":"Zubat","d":41,"r":"comune","t":"Oscurità","s":"Segreto Fiabesco","i":"sv/sv06.5/027"},
+  {"id":"swsh12-103","n":"Zubat","d":41,"r":"comune","t":"Oscurità","s":"Tempesta Argentata","i":"swsh/swsh12/103"},
+  {"id":"sv03.5-042","n":"Golbat","d":42,"r":"non-comune","t":"Oscurità","s":"151","i":"sv/sv03.5/042"},
+  {"id":"sv04-111","n":"Golbat","d":42,"r":"comune","t":"Oscurità","s":"Paradosso Temporale","i":"sv/sv04/111"},
+  {"id":"sv03-001","n":"Oddish","d":43,"r":"comune","t":"Erba","s":"Ossidiana Infuocata","i":"sv/sv03/001"},
+  {"id":"sv04.5-092","n":"Oddish","d":43,"r":"ultra-rara","t":"Erba","s":"Destino di Paldea","i":"sv/sv04.5/092"},
+  {"id":"me02.5-002","n":"Gloom di Erika","d":44,"r":"non-comune","t":"Erba","s":"Ascesa Eroica","i":"me/me02.5/002"},
+  {"id":"sv03-198","n":"Gloom","d":44,"r":"rara","t":"Erba","s":"Ossidiana Infuocata","i":"sv/sv03/198"},
+  {"id":"sv04.5-093","n":"Gloom","d":44,"r":"ultra-rara","t":"Erba","s":"Destino di Paldea","i":"sv/sv04.5/093"},
+  {"id":"sm12-250","n":"Vileplume GX","d":45,"r":"ultra-rara","t":"Erba","s":"Eclissi Cosmica","i":"sm/sm12/250"},
+  {"id":"sv03.5-045","n":"Vileplume","d":45,"r":"rara","t":"Erba","s":"151","i":"sv/sv03.5/045"},
+  {"id":"sv03.5-046","n":"Paras","d":46,"r":"comune","t":"Erba","s":"151","i":"sv/sv03.5/046"},
+  {"id":"sv09-004","n":"Paras","d":46,"r":"comune","t":"Erba","s":"Avventure Insieme","i":"sv/sv09/004"},
+  {"id":"sv03.5-047","n":"Parasect","d":47,"r":"non-comune","t":"Erba","s":"151","i":"sv/sv03.5/047"},
+  {"id":"swsh11-005","n":"Parasect","d":47,"r":"rara","t":"Erba","s":"Origine Perduta","i":"swsh/swsh11/005"},
+  {"id":"sm10-10","n":"Venonat","d":48,"r":"comune","t":"Erba","s":"Legami Inossidabili","i":"sm/sm10/10"},
+  {"id":"swsh12-001","n":"Venonat","d":48,"r":"comune","t":"Erba","s":"Tempesta Argentata","i":"swsh/swsh12/001"},
+  {"id":"sm10-11","n":"Venomoth","d":49,"r":"rara","t":"Erba","s":"Legami Inossidabili","i":"sm/sm10/11"},
+  {"id":"swsh12-002","n":"Venomoth","d":49,"r":"non-comune","t":"Erba","s":"Tempesta Argentata","i":"swsh/swsh12/002"},
+  {"id":"swsh3-84","n":"Diglett","d":50,"r":"comune","t":"Lotta","s":"Fiamme Oscure","i":"swsh/swsh3/84"},
+  {"id":"swsh6-76","n":"Diglett","d":50,"r":"comune","t":"Lotta","s":"Regno Glaciale","i":"swsh/swsh6/76"},
+  {"id":"sv03-104","n":"Dugtrio","d":51,"r":"non-comune","t":"Lotta","s":"Ossidiana Infuocata","i":"sv/sv03/104"},
+  {"id":"swsh6-77","n":"Dugtrio","d":51,"r":"rara","t":"Lotta","s":"Regno Glaciale","i":"swsh/swsh6/77"},
+  {"id":"30th-144","n":"Meowth","d":52,"r":"rara","t":"Incolore","s":"30° Anniversario","i":"me/30th/144"},
+  {"id":"swshp-SWSH005","n":"Meowth VMAX","d":52,"r":"non-comune","t":"Incolore","s":"SPSC Promo","i":"swsh/swshp/SWSH005"},
+  {"id":"bw4-81","n":"Persian","d":53,"r":"rara","t":"Incolore","s":"Destini Futuri","i":"bw/bw4/81"},
+  {"id":"sm10-207","n":"Persian GX","d":53,"r":"ultra-rara","t":"Incolore","s":"Legami Inossidabili","i":"sm/sm10/207"},
+  {"id":"sv03.5-053","n":"Persian","d":53,"r":"non-comune","t":"Incolore","s":"151","i":"sv/sv03.5/053"},
+  {"id":"bw7-32","n":"Psyduck","d":54,"r":"comune","t":"Acqua","s":"Confini Varcati","i":"bw/bw7/32"},
+  {"id":"sv03.5-175","n":"Psyduck","d":54,"r":"rara","t":"Acqua","s":"151","i":"sv/sv03.5/175"},
+  {"id":"me02.5-040","n":"Golduck","d":55,"r":"non-comune","t":"Acqua","s":"Ascesa Eroica","i":"me/me02.5/040"},
+  {"id":"xy9-17","n":"Golduck","d":55,"r":"rara","t":"Acqua","s":"Turbo Crash","i":"xy/xy9/17"},
+  {"id":"sm9-71","n":"Mankey","d":56,"r":"comune","t":"Lotta","s":"Gioco di Squadra","i":"sm/sm9/71"},
+  {"id":"sv04.5-169","n":"Mankey","d":56,"r":"ultra-rara","t":"Lotta","s":"Destino di Paldea","i":"sv/sv04.5/169"},
+  {"id":"me05-043","n":"Primeape","d":57,"r":"comune","t":"Lotta","s":"Buio Pesto","i":"me/me05/043"},
+  {"id":"sv04.5-170","n":"Primeape","d":57,"r":"ultra-rara","t":"Lotta","s":"Destino di Paldea","i":"sv/sv04.5/170"},
+  {"id":"xy11-53","n":"Primeape","d":57,"r":"rara","t":"Lotta","s":"Vapori Accesi","i":"xy/xy11/53"},
+  {"id":"sv06-181","n":"Growlithe di Hisui","d":58,"r":"rara","t":"Lotta","s":"Crepuscolo Mascherato","i":"sv/sv06/181"},
+  {"id":"xy9-10","n":"Growlithe","d":58,"r":"comune","t":"Fuoco","s":"Turbo Crash","i":"xy/xy9/10"},
+  {"id":"sm10-22","n":"Arcanine","d":59,"r":"rara","t":"Fuoco","s":"Legami Inossidabili","i":"sm/sm10/22"},
+  {"id":"sv01-224","n":"Arcanine-ex","d":59,"r":"ultra-rara","t":"Fuoco","s":"Scarlatto e Violetto","i":"sv/sv01/224"},
+  {"id":"sv03.5-059","n":"Arcanine","d":59,"r":"non-comune","t":"Fuoco","s":"151","i":"sv/sv03.5/059"},
+  {"id":"sv03.5-060","n":"Poliwag","d":60,"r":"comune","t":"Acqua","s":"151","i":"sv/sv03.5/060"},
+  {"id":"swsh11-030","n":"Poliwag","d":60,"r":"comune","t":"Acqua","s":"Origine Perduta","i":"swsh/swsh11/030"},
+  {"id":"sv03.5-176","n":"Poliwhirl","d":61,"r":"rara","t":"Acqua","s":"151","i":"sv/sv03.5/176"},
+  {"id":"sv06-042","n":"Poliwhirl","d":61,"r":"comune","t":"Acqua","s":"Crepuscolo Mascherato","i":"sv/sv06/042"},
+  {"id":"sv06-043","n":"Poliwrath","d":62,"r":"non-comune","t":"Acqua","s":"Crepuscolo Mascherato","i":"sv/sv06/043"},
+  {"id":"xy12-25","n":"Poliwrath","d":62,"r":"rara","t":"Acqua","s":"Evoluzioni","i":"xy/xy12/25"},
+  {"id":"sv04.5-148","n":"Abra","d":63,"r":"ultra-rara","t":"Psico","s":"Destino di Paldea","i":"sv/sv04.5/148"},
+  {"id":"sv06-080","n":"Abra","d":63,"r":"comune","t":"Psico","s":"Crepuscolo Mascherato","i":"sv/sv06/080"},
+  {"id":"sv04.5-149","n":"Kadabra","d":64,"r":"ultra-rara","t":"Psico","s":"Destino di Paldea","i":"sv/sv04.5/149"},
+  {"id":"sv06-081","n":"Kadabra","d":64,"r":"comune","t":"Psico","s":"Crepuscolo Mascherato","i":"sv/sv06/081"},
+  {"id":"sv06-082","n":"Alakazam","d":65,"r":"rara","t":"Psico","s":"Crepuscolo Mascherato","i":"sv/sv06/082"},
+  {"id":"swshp-SWSH083","n":"Alakazam V","d":65,"r":"non-comune","t":"Psico","s":"SPSC Promo","i":"swsh/swshp/SWSH083"},
+  {"id":"swsh3.5-24","n":"Machop","d":66,"r":"comune","t":"Lotta","s":"Futuri Campioni","i":"swsh/swsh3.5/24"},
+  {"id":"tk-xy-latio-28","n":"Machop","d":66,"r":"comune","t":"Lotta","s":"XY trainer Kit (Latios)","i":"tk/tk-xy-latio/28"},
+  {"id":"sv03.5-177","n":"Machoke","d":67,"r":"rara","t":"Lotta","s":"151","i":"sv/sv03.5/177"},
+  {"id":"tk-xy-latio-14","n":"Machoke","d":67,"r":"non-comune","t":"Lotta","s":"XY trainer Kit (Latios)","i":"tk/tk-xy-latio/14"},
+  {"id":"sm2-65","n":"Machamp","d":68,"r":"rara","t":"Lotta","s":"Guardiani Nascenti","i":"sm/sm2/65"},
+  {"id":"swshp-SWSH053","n":"Machamp","d":68,"r":"non-comune","t":"Lotta","s":"SPSC Promo","i":"swsh/swshp/SWSH053"},
+  {"id":"sm10-13","n":"Bellsprout","d":69,"r":"comune","t":"Erba","s":"Legami Inossidabili","i":"sm/sm10/13"},
+  {"id":"sv03.5-069","n":"Bellsprout","d":69,"r":"comune","t":"Erba","s":"151","i":"sv/sv03.5/069"},
+  {"id":"sm2-2","n":"Weepinbell","d":70,"r":"non-comune","t":"Erba","s":"Guardiani Nascenti","i":"sm/sm2/2"},
+  {"id":"sm7-2","n":"Weepinbell","d":70,"r":"non-comune","t":"Erba","s":"Tempesta Astrale","i":"sm/sm7/2"},
+  {"id":"sm7-3","n":"Victreebel","d":71,"r":"rara","t":"Erba","s":"Tempesta Astrale","i":"sm/sm7/3"},
+  {"id":"sv03.5-071","n":"Victreebel","d":71,"r":"non-comune","t":"Erba","s":"151","i":"sv/sv03.5/071"},
+  {"id":"sm10-40","n":"Tentacool","d":72,"r":"comune","t":"Acqua","s":"Legami Inossidabili","i":"sm/sm10/40"},
+  {"id":"sm9-60","n":"Tentacool","d":72,"r":"comune","t":"Psico","s":"Gioco di Squadra","i":"sm/sm9/60"},
+  {"id":"sm10-41","n":"Tentacruel","d":73,"r":"non-comune","t":"Acqua","s":"Legami Inossidabili","i":"sm/sm10/41"},
+  {"id":"xy5-72","n":"Tentacruel","d":73,"r":"rara","t":"Psico","s":"Scontro Primordiale","i":"xy/xy5/72"},
+  {"id":"sm2-40","n":"Geodude di Alola","d":74,"r":"comune","t":"Lampo","s":"Guardiani Nascenti","i":"sm/sm2/40"},
+  {"id":"sm4-32","n":"Geodude di Alola","d":74,"r":"comune","t":"Lampo","s":"Invasione Scarlatta","i":"sm/sm4/32"},
+  {"id":"sm9-36","n":"Graveler di Alola","d":75,"r":"non-comune","t":"Lampo","s":"Gioco di Squadra","i":"sm/sm9/36"},
+  {"id":"xy2-46","n":"Graveler","d":75,"r":"non-comune","t":"Lotta","s":"Fuoco Infernale","i":"xy/xy2/46"},
+  {"id":"sm10-89","n":"Golem","d":76,"r":"rara","t":"Lotta","s":"Legami Inossidabili","i":"sm/sm10/89"},
+  {"id":"sm4-34","n":"Golem di Alola GX","d":76,"r":"ultra-rara","t":"Lampo","s":"Invasione Scarlatta","i":"sm/sm4/34"},
+  {"id":"sv09-046","n":"Golem di Alola","d":76,"r":"non-comune","t":"Lampo","s":"Avventure Insieme","i":"sv/sv09/046"},
+  {"id":"sv03.5-077","n":"Ponyta","d":77,"r":"comune","t":"Fuoco","s":"151","i":"sv/sv03.5/077"},
+  {"id":"sv10-029","n":"Ponyta","d":77,"r":"comune","t":"Fuoco","s":"Rivali Predestinati","i":"sv/sv10/029"},
+  {"id":"sv05-027","n":"Rapidash","d":78,"r":"non-comune","t":"Fuoco","s":"Cronoforze","i":"sv/sv05/027"},
+  {"id":"swsh10-022","n":"Rapidash","d":78,"r":"rara","t":"Fuoco","s":"Lucentezza Siderale","i":"swsh/swsh10/022"},
+  {"id":"swsh6-168","n":"Rapidash di Galar V","d":78,"r":"ultra-rara","t":"Psico","s":"Regno Glaciale","i":"swsh/swsh6/168"},
+  {"id":"bw5-23","n":"Slowpoke","d":79,"r":"comune","t":"Acqua","s":"Esploratori delle Tenebre","i":"bw/bw5/23"},
+  {"id":"sv01-204","n":"Slowpoke","d":79,"r":"rara","t":"Acqua","s":"Scarlatto e Violetto","i":"sv/sv01/204"},
+  {"id":"sv04.5-116","n":"Slowpoke","d":79,"r":"ultra-rara","t":"Acqua","s":"Destino di Paldea","i":"sv/sv04.5/116"},
+  {"id":"me05-090","n":"Slowbro","d":80,"r":"rara","t":"Psico","s":"Buio Pesto","i":"me/me05/090"},
+  {"id":"sv04.5-117","n":"Slowbro","d":80,"r":"ultra-rara","t":"Acqua","s":"Destino di Paldea","i":"sv/sv04.5/117"},
+  {"id":"swsh10.5-020","n":"Slowbro","d":80,"r":"non-comune","t":"Acqua","s":"Pokémon GO","i":"swsh/swsh10.5/020"},
+  {"id":"sm12-242","n":"Magnemite","d":81,"r":"ultra-rara","t":"Lampo","s":"Eclissi Cosmica","i":"sm/sm12/242"},
+  {"id":"sv02-065","n":"Magnemite","d":81,"r":"comune","t":"Lampo","s":"Evoluzioni a Paldea","i":"sv/sv02/065"},
+  {"id":"sm12-69","n":"Magneton","d":82,"r":"rara","t":"Lampo","s":"Eclissi Cosmica","i":"sm/sm12/69"},
+  {"id":"swsh9-115","n":"Farfetch'd","d":83,"r":"comune","t":"Incolore","s":"Astri Lucenti","i":"swsh/swsh9/115"},
+  {"id":"xy12-68","n":"Farfetch'd","d":83,"r":"rara","t":"Incolore","s":"Evoluzioni","i":"xy/xy12/68"},
+  {"id":"sv04.5-199","n":"Doduo","d":84,"r":"ultra-rara","t":"Incolore","s":"Destino di Paldea","i":"sv/sv04.5/199"},
+  {"id":"xy8-116","n":"Doduo","d":84,"r":"comune","t":"Incolore","s":"Turbo Blitz","i":"xy/xy8/116"},
+  {"id":"sm10-151","n":"Dodrio","d":85,"r":"non-comune","t":"Incolore","s":"Legami Inossidabili","i":"sm/sm10/151"},
+  {"id":"xy8-117","n":"Dodrio","d":85,"r":"rara","t":"Incolore","s":"Turbo Blitz","i":"xy/xy8/117"},
+  {"id":"sm10-44","n":"Seel","d":86,"r":"comune","t":"Acqua","s":"Legami Inossidabili","i":"sm/sm10/44"},
+  {"id":"swsh11-033","n":"Seel","d":86,"r":"comune","t":"Acqua","s":"Origine Perduta","i":"swsh/swsh11/033"},
+  {"id":"me02-022","n":"Dewgong","d":87,"r":"comune","t":"Acqua","s":"Fiamme Spettrali","i":"me/me02/022"},
+  {"id":"me03-019","n":"Dewgong","d":87,"r":"rara","t":"Acqua","s":"Equilibrio Perfetto","i":"me/me03/019"},
+  {"id":"sv10-123","n":"Grimer del Team Rocket","d":88,"r":"comune","t":"Oscurità","s":"Rivali Predestinati","i":"sv/sv10/123"},
+  {"id":"swsh3-100","n":"Grimer","d":88,"r":"comune","t":"Oscurità","s":"Fiamme Oscure","i":"swsh/swsh3/100"},
+  {"id":"sm1-58","n":"Muk di Alola","d":89,"r":"rara","t":"Psico","s":"Sole e Luna","i":"sm/sm1/58"},
+  {"id":"sv01-127","n":"Muk","d":89,"r":"non-comune","t":"Oscurità","s":"Scarlatto e Violetto","i":"sv/sv01/127"},
+  {"id":"swsh8-50","n":"Shellder","d":90,"r":"comune","t":"Acqua","s":"Colpo Fusione","i":"swsh/swsh8/50"},
+  {"id":"xy9-22","n":"Shellder","d":90,"r":"comune","t":"Acqua","s":"Turbo Crash","i":"xy/xy9/22"},
+  {"id":"sv03.5-091","n":"Cloyster","d":91,"r":"non-comune","t":"Acqua","s":"151","i":"sv/sv03.5/091"},
+  {"id":"swsh1-41","n":"Cloyster","d":91,"r":"rara","t":"Acqua","s":"Spada e Scudo","i":"swsh/swsh1/41"},
+  {"id":"sv05-102","n":"Gastly","d":92,"r":"comune","t":"Oscurità","s":"Cronoforze","i":"sv/sv05/102"},
+  {"id":"sv05-177","n":"Gastly","d":92,"r":"rara","t":"Oscurità","s":"Cronoforze","i":"sv/sv05/177"},
+  {"id":"me02-055","n":"Haunter","d":93,"r":"non-comune","t":"Oscurità","s":"Fiamme Spettrali","i":"me/me02/055"},
+  {"id":"me02.5-124","n":"Haunter","d":93,"r":"non-comune","t":"Oscurità","s":"Ascesa Eroica","i":"me/me02.5/124"},
+  {"id":"swsh6-57","n":"Gengar","d":94,"r":"rara","t":"Psico","s":"Regno Glaciale","i":"swsh/swsh6/57"},
+  {"id":"swsh8-157","n":"Gengar VMAX","d":94,"r":"ultra-rara","t":"Oscurità","s":"Colpo Fusione","i":"swsh/swsh8/157"},
+  {"id":"swshp-SWSH241","n":"Gengar","d":94,"r":"non-comune","t":"Psico","s":"SPSC Promo","i":"swsh/swshp/SWSH241"},
+  {"id":"sm12-105","n":"Onix","d":95,"r":"comune","t":"Lotta","s":"Eclissi Cosmica","i":"sm/sm12/105"},
+  {"id":"swsh10.5-036","n":"Onix","d":95,"r":"comune","t":"Lotta","s":"Pokémon GO","i":"swsh/swsh10.5/036"},
+  {"id":"sv01-210","n":"Drowzee","d":96,"r":"rara","t":"Psico","s":"Scarlatto e Violetto","i":"sv/sv01/210"},
+  {"id":"swsh12-060","n":"Drowzee","d":96,"r":"comune","t":"Psico","s":"Tempesta Argentata","i":"swsh/swsh12/060"},
+  {"id":"swsh12-061","n":"Hypno","d":97,"r":"non-comune","t":"Psico","s":"Tempesta Argentata","i":"swsh/swsh12/061"},
+  {"id":"xy9-51","n":"Hypno","d":97,"r":"rara","t":"Psico","s":"Turbo Crash","i":"xy/xy9/51"},
+  {"id":"sm10-46","n":"Krabby","d":98,"r":"comune","t":"Acqua","s":"Legami Inossidabili","i":"sm/sm10/46"},
+  {"id":"swsh1-43","n":"Krabby","d":98,"r":"comune","t":"Acqua","s":"Spada e Scudo","i":"swsh/swsh1/43"},
+  {"id":"sm10-47","n":"Kingler","d":99,"r":"rara","t":"Acqua","s":"Legami Inossidabili","i":"sm/sm10/47"},
+  {"id":"sv03.5-099","n":"Kingler","d":99,"r":"non-comune","t":"Acqua","s":"151","i":"sv/sv03.5/099"},
+  {"id":"swsh9-028","n":"Kingler V","d":99,"r":"ultra-rara","t":"Acqua","s":"Astri Lucenti","i":"swsh/swsh9/028"},
+  {"id":"me02.5-058","n":"Voltorb-ex","d":100,"r":"ultra-rara","t":"Lampo","s":"Ascesa Eroica","i":"me/me02.5/058"},
+  {"id":"xy1-44","n":"Voltorb","d":100,"r":"comune","t":"Lampo","s":"XY","i":"xy/xy1/44"},
+  {"id":"bw9-33","n":"Electrode","d":101,"r":"rara","t":"Lampo","s":"Glaciazione Plasma","i":"bw/bw9/33"},
+  {"id":"sm7-48","n":"Electrode GX","d":101,"r":"ultra-rara","t":"Lampo","s":"Tempesta Astrale","i":"sm/sm7/48"},
+  {"id":"swshp-SWSH294","n":"Electrode di Hisui V","d":101,"r":"non-comune","t":"Erba","s":"SPSC Promo","i":"swsh/swshp/SWSH294"},
+  {"id":"sm5-1","n":"Exeggcute","d":102,"r":"comune","t":"Erba","s":"Ultraprisma","i":"sm/sm5/1"},
+  {"id":"sv08-192","n":"Exeggcute","d":102,"r":"rara","t":"Erba","s":"Scintille Folgoranti","i":"sv/sv08/192"},
+  {"id":"sm6-2","n":"Exeggutor di Alola","d":103,"r":"rara","t":"Erba","s":"Apocalisse Di Luce","i":"sm/sm6/2"},
+  {"id":"sv03.5-103","n":"Exeggutor","d":103,"r":"non-comune","t":"Erba","s":"151","i":"sv/sv03.5/103"},
+  {"id":"sv03.5-104","n":"Cubone","d":104,"r":"comune","t":"Lotta","s":"151","i":"sv/sv03.5/104"},
+  {"id":"xy8-77","n":"Cubone","d":104,"r":"comune","t":"Lotta","s":"Turbo Blitz","i":"xy/xy8/77"},
+  {"id":"sm6-12","n":"Marowak di Alola","d":105,"r":"rara","t":"Fuoco","s":"Apocalisse Di Luce","i":"sm/sm6/12"},
+  {"id":"sv09-057","n":"Marowak di Alola","d":105,"r":"non-comune","t":"Psico","s":"Avventure Insieme","i":"sv/sv09/057"},
+  {"id":"sm9-73","n":"Hitmonlee","d":106,"r":"non-comune","t":"Lotta","s":"Gioco di Squadra","i":"sm/sm9/73"},
+  {"id":"swsh1-94","n":"Hitmonlee","d":106,"r":"non-comune","t":"Lotta","s":"Spada e Scudo","i":"swsh/swsh1/94"},
+  {"id":"sv03.5-107","n":"Hitmonchan","d":107,"r":"non-comune","t":"Lotta","s":"151","i":"sv/sv03.5/107"},
+  {"id":"xy12-62","n":"Hitmonchan","d":107,"r":"rara","t":"Lotta","s":"Evoluzioni","i":"xy/xy12/62"},
+  {"id":"sv03.5-108","n":"Lickitung","d":108,"r":"comune","t":"Incolore","s":"151","i":"sv/sv03.5/108"},
+  {"id":"sv05-180","n":"Lickitung","d":108,"r":"rara","t":"Incolore","s":"Cronoforze","i":"sv/sv05/180"},
+  {"id":"sm12-243","n":"Koffing","d":109,"r":"ultra-rara","t":"Psico","s":"Eclissi Cosmica","i":"sm/sm12/243"},
+  {"id":"xy10-27","n":"Koffing","d":109,"r":"comune","t":"Psico","s":"Destini Incrociati","i":"xy/xy10/27"},
+  {"id":"sm12-77","n":"Weezing","d":110,"r":"rara","t":"Psico","s":"Eclissi Cosmica","i":"sm/sm12/77"},
+  {"id":"xy10-28","n":"Weezing","d":110,"r":"non-comune","t":"Psico","s":"Destini Incrociati","i":"xy/xy10/28"},
+  {"id":"sv03.5-111","n":"Rhyhorn","d":111,"r":"comune","t":"Lotta","s":"151","i":"sv/sv03.5/111"},
+  {"id":"sm10-94","n":"Rhydon","d":112,"r":"non-comune","t":"Lotta","s":"Legami Inossidabili","i":"sm/sm10/94"},
+  {"id":"xy1-61","n":"Rhydon","d":112,"r":"rara","t":"Lotta","s":"XY","i":"xy/xy1/61"},
+  {"id":"sm2-101","n":"Chansey","d":113,"r":"comune","t":"Incolore","s":"Guardiani Nascenti","i":"sm/sm2/101"},
+  {"id":"sv03.5-113","n":"Chansey","d":113,"r":"rara","t":"Incolore","s":"151","i":"sv/sv03.5/113"},
+  {"id":"me02.5-218","n":"Tangela di Erika","d":114,"r":"rara","t":"Erba","s":"Ascesa Eroica","i":"me/me02.5/218"},
+  {"id":"tk-xy-latia-13","n":"Tangela","d":114,"r":"comune","t":"Erba","s":"XY trainer Kit (Latias)","i":"tk/tk-xy-latia/13"},
+  {"id":"sm1-99","n":"Kangaskhan","d":115,"r":"rara","t":"Incolore","s":"Sole e Luna","i":"sm/sm1/99"},
+  {"id":"sv03-165","n":"Kangaskhan","d":115,"r":"non-comune","t":"Incolore","s":"Ossidiana Infuocata","i":"sv/sv03/165"},
+  {"id":"sm3-29","n":"Horsea","d":116,"r":"comune","t":"Acqua","s":"Ombre Infuocate","i":"sm/sm3/29"},
+  {"id":"sv06.5-067","n":"Horsea","d":116,"r":"rara","t":"Acqua","s":"Segreto Fiabesco","i":"sv/sv06.5/067"},
+  {"id":"sm3-30","n":"Seadra","d":117,"r":"non-comune","t":"Acqua","s":"Ombre Infuocate","i":"sm/sm3/30"},
+  {"id":"sv06.5-011","n":"Seadra","d":117,"r":"comune","t":"Acqua","s":"Segreto Fiabesco","i":"sv/sv06.5/011"},
+  {"id":"me05-087","n":"Goldeen","d":118,"r":"rara","t":"Acqua","s":"Buio Pesto","i":"me/me05/087"},
+  {"id":"swsh1-45","n":"Goldeen","d":118,"r":"comune","t":"Acqua","s":"Spada e Scudo","i":"swsh/swsh1/45"},
+  {"id":"sm10-49","n":"Seaking","d":119,"r":"rara","t":"Acqua","s":"Legami Inossidabili","i":"sm/sm10/49"},
+  {"id":"sv06-045","n":"Seaking","d":119,"r":"comune","t":"Acqua","s":"Crepuscolo Mascherato","i":"sv/sv06/045"},
+  {"id":"me03-020","n":"Staryu","d":120,"r":"comune","t":"Acqua","s":"Equilibrio Perfetto","i":"me/me03/020"},
+  {"id":"sv04.5-118","n":"Staryu","d":120,"r":"ultra-rara","t":"Acqua","s":"Destino di Paldea","i":"sv/sv04.5/118"},
+  {"id":"xy12-31","n":"Starmie","d":121,"r":"rara","t":"Acqua","s":"Evoluzioni","i":"xy/xy12/31"},
+  {"id":"xy8-30","n":"Starmie","d":121,"r":"non-comune","t":"Acqua","s":"Turbo Blitz","i":"xy/xy8/30"},
+  {"id":"bw9-47","n":"Mr. Mime","d":122,"r":"rara","t":"Psico","s":"Glaciazione Plasma","i":"bw/bw9/47"},
+  {"id":"sm7-173","n":"Mr. Mime GX","d":122,"r":"ultra-rara","t":"Psico","s":"Tempesta Astrale","i":"sm/sm7/173"},
+  {"id":"sv09-058","n":"Mr. Mime","d":122,"r":"comune","t":"Psico","s":"Avventure Insieme","i":"sv/sv09/058"},
+  {"id":"sv04.5-095","n":"Scyther","d":123,"r":"ultra-rara","t":"Erba","s":"Destino di Paldea","i":"sv/sv04.5/095"},
+  {"id":"swsh10-005","n":"Scyther","d":123,"r":"comune","t":"Erba","s":"Lucentezza Siderale","i":"swsh/swsh10/005"},
+  {"id":"sv06-046","n":"Jynx","d":124,"r":"comune","t":"Acqua","s":"Crepuscolo Mascherato","i":"sv/sv06/046"},
+  {"id":"xy3-37","n":"Jynx","d":124,"r":"rara","t":"Psico","s":"Colpi Furiosi","i":"xy/xy3/37"},
+  {"id":"sv05-053","n":"Electabuzz","d":125,"r":"comune","t":"Lampo","s":"Cronoforze","i":"sv/sv05/053"},
+  {"id":"tk-xy-p-23","n":"Electabuzz","d":125,"r":"comune","t":"Lampo","s":"XY trainer Kit (Pikachu Libre)","i":"tk/tk-xy-p/23"},
+  {"id":"sm11-21","n":"Magmar","d":126,"r":"comune","t":"Fuoco","s":"Sintonia Mentale","i":"sm/sm11/21"},
+  {"id":"sv09-020","n":"Magmar","d":126,"r":"comune","t":"Fuoco","s":"Avventure Insieme","i":"sv/sv09/020"},
+  {"id":"sv06-003","n":"Pinsir","d":127,"r":"comune","t":"Erba","s":"Crepuscolo Mascherato","i":"sv/sv06/003"},
+  {"id":"sv06-168","n":"Pinsir","d":127,"r":"rara","t":"Erba","s":"Crepuscolo Mascherato","i":"sv/sv06/168"},
+  {"id":"me04-096","n":"Tauros","d":128,"r":"rara","t":"Incolore","s":"Caos Nascente","i":"me/me04/096"},
+  {"id":"sv10-152","n":"Tauros","d":128,"r":"comune","t":"Incolore","s":"Rivali Predestinati","i":"sv/sv10/152"},
+  {"id":"sv02-203","n":"Magikarp","d":129,"r":"rara","t":"Acqua","s":"Evoluzioni a Paldea","i":"sv/sv02/203"},
+  {"id":"xy12-33","n":"Magikarp","d":129,"r":"comune","t":"Acqua","s":"Evoluzioni","i":"xy/xy12/33"},
+  {"id":"sv01-045","n":"Gyarados-ex","d":130,"r":"ultra-rara","t":"Acqua","s":"Scarlatto e Violetto","i":"sv/sv01/045"},
+  {"id":"sv02-043","n":"Gyarados","d":130,"r":"rara","t":"Acqua","s":"Evoluzioni a Paldea","i":"sv/sv02/043"},
+  {"id":"sm1-35","n":"Lapras GX","d":131,"r":"ultra-rara","t":"Acqua","s":"Sole e Luna","i":"sm/sm1/35"},
+  {"id":"swshp-SWSH051","n":"Lapras","d":131,"r":"non-comune","t":"Acqua","s":"SPSC Promo","i":"swsh/swshp/SWSH051"},
+  {"id":"xy1-35","n":"Lapras","d":131,"r":"rara","t":"Acqua","s":"XY","i":"xy/xy1/35"},
+  {"id":"30th-115","n":"Ditto","d":132,"r":"comune","t":"Incolore","s":"30° Anniversario","i":"me/30th/115"},
+  {"id":"swsh10.5-053","n":"Ditto","d":132,"r":"rara","t":"Incolore","s":"Pokémon GO","i":"swsh/swsh10.5/053"},
+  {"id":"sv08.5-075","n":"Eevee-ex","d":133,"r":"ultra-rara","t":"Incolore","s":"Evoluzioni Prismatiche","i":"sv/sv08.5/075"},
+  {"id":"swshp-SWSH095","n":"Eevee","d":133,"r":"non-comune","t":"Incolore","s":"SPSC Promo","i":"swsh/swshp/SWSH095"},
+  {"id":"bw9-20","n":"Vaporeon","d":134,"r":"non-comune","t":"Acqua","s":"Glaciazione Plasma","i":"bw/bw9/20"},
+  {"id":"sv03.5-134","n":"Vaporeon","d":134,"r":"rara","t":"Acqua","s":"151","i":"sv/sv03.5/134"},
+  {"id":"bw9-34","n":"Jolteon","d":135,"r":"non-comune","t":"Lampo","s":"Glaciazione Plasma","i":"bw/bw9/34"},
+  {"id":"sv03.5-135","n":"Jolteon","d":135,"r":"rara","t":"Lampo","s":"151","i":"sv/sv03.5/135"},
+  {"id":"sv08.5-030","n":"Jolteon-ex","d":135,"r":"ultra-rara","t":"Lampo","s":"Evoluzioni Prismatiche","i":"sv/sv08.5/030"},
+  {"id":"sv08.5-013","n":"Flareon","d":136,"r":"rara","t":"Fuoco","s":"Evoluzioni Prismatiche","i":"sv/sv08.5/013"},
+  {"id":"bw10-72","n":"Porygon","d":137,"r":"comune","t":"Incolore","s":"Esplosione Plasma","i":"bw/bw10/72"},
+  {"id":"sm10-154","n":"Porygon","d":137,"r":"comune","t":"Incolore","s":"Legami Inossidabili","i":"sm/sm10/154"},
+  {"id":"sv03.5-180","n":"Omanyte","d":138,"r":"rara","t":"Acqua","s":"151","i":"sv/sv03.5/180"},
+  {"id":"xy10-17","n":"Omanyte","d":138,"r":"non-comune","t":"Acqua","s":"Destini Incrociati","i":"xy/xy10/17"},
+  {"id":"sv03.5-139","n":"Omastar","d":139,"r":"rara","t":"Acqua","s":"151","i":"sv/sv03.5/139"},
+  {"id":"swsh12-035","n":"Omastar V","d":139,"r":"ultra-rara","t":"Acqua","s":"Tempesta Argentata","i":"swsh/swsh12/035"},
+  {"id":"sm9-77","n":"Kabuto","d":140,"r":"non-comune","t":"Lotta","s":"Gioco di Squadra","i":"sm/sm9/77"},
+  {"id":"xy10-38","n":"Kabuto","d":140,"r":"non-comune","t":"Lotta","s":"Destini Incrociati","i":"xy/xy10/38"},
+  {"id":"sm9-78","n":"Kabutops","d":141,"r":"rara","t":"Lotta","s":"Gioco di Squadra","i":"sm/sm9/78"},
+  {"id":"xy10-39","n":"Kabutops","d":141,"r":"rara","t":"Lotta","s":"Destini Incrociati","i":"xy/xy10/39"},
+  {"id":"sm11-106","n":"Aerodactyl GX","d":142,"r":"ultra-rara","t":"Lotta","s":"Sintonia Mentale","i":"sm/sm11/106"},
+  {"id":"xy10-76","n":"Aerodactyl","d":142,"r":"rara","t":"Incolore","s":"Destini Incrociati","i":"xy/xy10/76"},
+  {"id":"swsh4-131","n":"Snorlax","d":143,"r":"rara","t":"Incolore","s":"Voltaggio Sfolgorante","i":"swsh/swsh4/131"},
+  {"id":"swshp-SWSH032","n":"Snorlax","d":143,"r":"non-comune","t":"Incolore","s":"SPSC Promo","i":"swsh/swshp/SWSH032"},
+  {"id":"30th-018","n":"Articuno","d":144,"r":"comune","t":"Acqua","s":"30° Anniversario","i":"me/30th/018"},
+  {"id":"xy6-16","n":"Articuno","d":144,"r":"rara","t":"Acqua","s":"Furie Volanti","i":"xy/xy6/16"},
+  {"id":"sm9-40","n":"Zapdos","d":145,"r":"rara","t":"Lampo","s":"Gioco di Squadra","i":"sm/sm9/40"},
+  {"id":"svp-049","n":"Zapdos-ex","d":145,"r":"non-comune","t":"Lampo","s":"SVP Black Star Promos","i":"sv/svp/049"},
+  {"id":"swsh6-173","n":"Zapdos di Galar V","d":145,"r":"ultra-rara","t":"Lotta","s":"Regno Glaciale","i":"swsh/swsh6/173"},
+  {"id":"swsh10.5-012","n":"Moltres","d":146,"r":"rara","t":"Fuoco","s":"Pokémon GO","i":"swsh/swsh10.5/012"},
+  {"id":"swsh6-177","n":"Moltres di Galar V","d":146,"r":"ultra-rara","t":"Oscurità","s":"Regno Glaciale","i":"swsh/swsh6/177"},
+  {"id":"swshp-SWSH185","n":"Moltres","d":146,"r":"non-comune","t":"Fuoco","s":"SPSC Promo","i":"swsh/swshp/SWSH185"},
+  {"id":"sv03-157","n":"Dratini","d":147,"r":"comune","t":"Drago","s":"Ossidiana Infuocata","i":"sv/sv03/157"},
+  {"id":"swsh12-129","n":"Dratini","d":147,"r":"comune","t":"Drago","s":"Tempesta Argentata","i":"swsh/swsh12/129"},
+  {"id":"me02.5-151","n":"Dragonair","d":148,"r":"non-comune","t":"Drago","s":"Ascesa Eroica","i":"me/me02.5/151"},
+  {"id":"sv03.5-181","n":"Dragonair","d":148,"r":"rara","t":"Drago","s":"151","i":"sv/sv03.5/181"},
+  {"id":"sv03.5-149","n":"Dragonite","d":149,"r":"rara","t":"Drago","s":"151","i":"sv/sv03.5/149"},
+  {"id":"swsh10.5-049","n":"Dragonite V","d":149,"r":"ultra-rara","t":"Drago","s":"Pokémon GO","i":"swsh/swsh10.5/049"},
+  {"id":"swshp-SWSH154","n":"Dragonite V","d":149,"r":"non-comune","t":"Drago","s":"SPSC Promo","i":"swsh/swshp/SWSH154"},
+  {"id":"sv07-059","n":"Mewtwo","d":150,"r":"non-comune","t":"Psico","s":"Corona Astrale","i":"sv/sv07/059"},
+  {"id":"swsh9-056","n":"Mewtwo","d":150,"r":"rara","t":"Psico","s":"Astri Lucenti","i":"swsh/swsh9/056"},
+  {"id":"30th-066","n":"Mew-ex","d":151,"r":"ultra-rara","t":"Psico","s":"30° Anniversario","i":"me/30th/066"},
+  {"id":"svp-053","n":"Mew-ex","d":151,"r":"non-comune","t":"Psico","s":"SVP Black Star Promos","i":"sv/svp/053"}
+];
+const NOMI_SPECIE = ["Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Charizard","Squirtle","Wartortle","Blastoise","Caterpie","Metapod","Butterfree","Weedle","Kakuna","Beedrill","Pidgey","Pidgeotto","Pidgeot","Rattata","Raticate","Spearow","Fearow","Ekans","Arbok","Pikachu","Raichu","Sandshrew","Sandslash","Nidoran♀","Nidorina","Nidoqueen","Nidoran♂","Nidorino","Nidoking","Clefairy","Clefable","Vulpix","Ninetales","Jigglypuff","Wigglytuff","Zubat","Golbat","Oddish","Gloom","Vileplume","Paras","Parasect","Venonat","Venomoth","Diglett","Dugtrio","Meowth","Persian","Psyduck","Golduck","Mankey","Primeape","Growlithe","Arcanine","Poliwag","Poliwhirl","Poliwrath","Abra","Kadabra","Alakazam","Machop","Machoke","Machamp","Bellsprout","Weepinbell","Victreebel","Tentacool","Tentacruel","Geodude","Graveler","Golem","Ponyta","Rapidash","Slowpoke","Slowbro","Magnemite","Magneton","Farfetch'd","Doduo","Dodrio","Seel","Dewgong","Grimer","Muk","Shellder","Cloyster","Gastly","Haunter","Gengar","Onix","Drowzee","Hypno","Krabby","Kingler","Voltorb","Electrode","Exeggcute","Exeggutor","Cubone","Marowak","Hitmonlee","Hitmonchan","Lickitung","Koffing","Weezing","Rhyhorn","Rhydon","Chansey","Tangela","Kangaskhan","Horsea","Seadra","Goldeen","Seaking","Staryu","Starmie","Mr. Mime","Scyther","Jynx","Electabuzz","Magmar","Pinsir","Tauros","Magikarp","Gyarados","Lapras","Ditto","Eevee","Vaporeon","Jolteon","Flareon","Porygon","Omanyte","Omastar","Kabuto","Kabutops","Aerodactyl","Snorlax","Articuno","Zapdos","Moltres","Dratini","Dragonair","Dragonite","Mewtwo","Mew"]; // indice = numero Pokédex - 1
+
+
+/* =========================================================
+   COSTANTI DI GIOCO
+   ========================================================= */
+const IMG_BASE = "https://assets.tcgdex.net/it/";
+const USCITE_AL_GIORNO = 5;
+const CHIAVE_SALVATAGGIO = "pokealbum_piccoli_allenatori_v1";
+const RARITA = ["comune", "non-comune", "rara", "ultra-rara"];
+const RARITA_INFO = {
+  "comune":     { nome: "Comune",     simbolo: "●", colore: "#4fae57" },
+  "non-comune": { nome: "Non comune", simbolo: "◆", colore: "#2f8cf0" },
+  "rara":       { nome: "Rara",       simbolo: "★", colore: "#e8a900" },
+  "ultra-rara": { nome: "Ultra rara", simbolo: "✦", colore: "#e43bc2" }
+};
+const TIPI = {
+  "Erba":{e:"🌿",c:"#4caf3a"}, "Fuoco":{e:"🔥",c:"#f2681f"}, "Acqua":{e:"💧",c:"#2f9bea"}, "Lampo":{e:"⚡",c:"#e8b800"},
+  "Psico":{e:"🔮",c:"#b04bc9"}, "Lotta":{e:"👊",c:"#b8582b"}, "Oscurità":{e:"🌙",c:"#4b4a6e"}, "Metallo":{e:"⚙️",c:"#7f8ea0"},
+  "Drago":{e:"🐉",c:"#5b4fcf"}, "Folletto":{e:"🧚",c:"#e8579f"}, "Incolore":{e:"⭐",c:"#a3a28f"}
+};
+
+/* Evoluzioni della prima generazione: [da, a] (numeri Pokédex) */
+const EVOLUZIONI = [[1,2],[2,3],[4,5],[5,6],[7,8],[8,9],[10,11],[11,12],[13,14],[14,15],[16,17],[17,18],[19,20],[21,22],[23,24],[25,26],[27,28],
+  [29,30],[30,31],[32,33],[33,34],[35,36],[37,38],[39,40],[41,42],[43,44],[44,45],[46,47],[48,49],[50,51],[52,53],[54,55],[56,57],[58,59],
+  [60,61],[61,62],[63,64],[64,65],[66,67],[67,68],[69,70],[70,71],[72,73],[74,75],[75,76],[77,78],[79,80],[81,82],[84,85],[86,87],[88,89],
+  [90,91],[92,93],[93,94],[96,97],[98,99],[100,101],[102,103],[104,105],[109,110],[111,112],[116,117],[118,119],[120,121],[129,130],
+  [133,134],[133,135],[133,136],[138,139],[140,141],[147,148],[148,149]];
+const LEGGENDARI = [144, 145, 146, 150, 151];
+
+/* Luoghi: gioco associato, carte sbloccate, rarità massima possibile, Pokémon che compaiono (numeri Pokédex) */
+const LUOGHI = {
+  bosco: { nome:"Bosco", emoji:"🌳", classe:"l-bosco", x:18, y:26, gioco:"memory", sblocco:0, maxRar:"non-comune",
+    sotto:"comuni e non comuni", regola:"Gira le tessere e trova tutte le coppie uguali! Meno mosse fai, più punti ottieni.",
+    pool:[1,2,10,11,12,13,14,15,16,17,19,25,29,32,43,44,46,47,48,49,69,70,102,114,123,127] },
+  citta: { nome:"Città", emoji:"🏙️", classe:"l-citta", x:50, y:20, gioco:"quiz", sblocco:0, maxRar:"rara",
+    sotto:"quiz", regola:"Rispondi alle 5 domande sui Pokémon. Ogni risposta giusta vale 20 punti!",
+    pool:[19,20,25,26,35,36,39,40,52,53,56,57,81,82,83,84,85,88,89,96,97,100,101,108,109,110,113,122,124,125,128,132,137] },
+  montagna: { nome:"Montagna", emoji:"🏔️", classe:"l-montagna", x:82, y:26, gioco:"simon", sblocco:50, maxRar:"ultra-rara", bonus:12,
+    sotto:"+12 fortuna", regola:"Guarda la sequenza di colori e ripetila toccando i pulsanti. Hai 2 vite!",
+    pool:[4,5,6,16,17,18,21,22,37,38,58,59,66,67,68,74,75,76,77,78,111,112,126,142,144,145,146,147,148,149] },
+  grotta: { nome:"Grotta", emoji:"🕳️", classe:"l-grotta", x:18, y:72, gioco:"palla", sblocco:25, maxRar:"ultra-rara",
+    sotto:"timing", regola:"Tocca LANCIA! quando il cerchio colorato diventa VERDE e combacia con il cerchio bianco. 5 lanci!",
+    pool:[23,24,27,28,41,42,50,51,63,64,74,75,92,93,94,95,104,105,111,112,138,139,140,141] },
+  spiaggia: { nome:"Spiaggia", emoji:"🏖️", classe:"l-spiaggia", x:50, y:78, gioco:"puzzle", sblocco:0, maxRar:"ultra-rara",
+    sotto:"puzzle", regola:"Tocca due pezzi per scambiarli e ricostruisci la carta. Meno scambi fai, più punti ottieni!",
+    pool:[7,8,9,54,55,60,61,62,72,73,79,80,86,87,90,91,98,99,116,117,118,119,120,121,129,130,131,134,135,136] },
+  laboratorio: { nome:"Laboratorio del Prof. Oak", emoji:"🔬", classe:"l-laboratorio", x:82, y:72, gioco:"quizHard", sblocco:75, maxRar:"ultra-rara", bonus:22,
+    sotto:"super rare! +22", regola:"7 domande DIFFICILI! Ogni risposta giusta vale circa 14 punti. Qui trovi le carte più rare!",
+    pool:null /* null = tutti i 151 Pokémon, con più probabilità per evoluzioni finali e leggendari */ }
+};
+const ORDINE_LUOGHI = ["bosco","citta","montagna","grotta","spiaggia","laboratorio"];
+
+/* Premi: ogni 25 carte diverse si sblocca qualcosa */
+const PREMI = [
+  { n:25,  e:"🕳️", t:"Grotta sbloccata!",     d:"Nuovo luogo sulla mappa" },
+  { n:50,  e:"🏔️", t:"Montagna sbloccata!",   d:"Nuovo luogo sulla mappa (+12 fortuna)" },
+  { n:75,  e:"🔬", t:"Laboratorio sbloccato!",d:"Il Laboratorio del Prof. Oak (+22 fortuna)" },
+  { n:100, e:"🌠", t:"Stelle cadenti",        d:"Nuova animazione sulla mappa", fx:"stelle" },
+  { n:125, e:"🌈", t:"Arcobaleno",            d:"Nuova animazione sulla mappa", fx:"arcobaleno" },
+  { n:150, e:"🎈", t:"Palloncini",            d:"Nuova animazione sulla mappa", fx:"palloncini" },
+  { n:175, e:"⚡", t:"Pikachu corridore",     d:"Nuova animazione sulla mappa", fx:"pika" },
+  { n:200, e:"🎆", t:"Fuochi d'artificio",    d:"Nuova animazione sulla mappa", fx:"fuochi" },
+  { n:225, e:"🏅", t:"Medaglia d'Oro",        d:"Un nuovo titolo da Allenatore" },
+  { n:250, e:"👑", t:"Corona del Campione",   d:"Un nuovo titolo da Allenatore" },
+  { n:275, e:"💎", t:"Diamante",              d:"Un nuovo titolo da Allenatore" },
+  { n:300, e:"🏆", t:"Trofeo Leggendario",    d:"Quasi tutte le carte!" },
+  { n:CARTE.length, e:"🌟", t:"ALBUM COMPLETO!", d:"Sei un vero Maestro Pokémon!" }
+];
+const RANGHI = ["Piccolo Allenatore","Cercatore","Esploratore","Allenatore","Allenatore Esperto","Domatore","Campione","Asso","Veterano","Élite","Super Campione","Maestro","Gran Maestro","Leggenda"];
+
+/* =========================================================
+   INDICI E UTILITÀ
+   ========================================================= */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const CARTA_PER_ID = {}; const CARTE_SPECIE = {};
+CARTE.forEach(c => { CARTA_PER_ID[c.id] = c; (CARTE_SPECIE[c.d] = CARTE_SPECIE[c.d] || []).push(c); });
+const EVO_A = {}, EVO_DA = {};
+EVOLUZIONI.forEach(([a, b]) => { (EVO_A[a] = EVO_A[a] || []).push(b); EVO_DA[b] = a; });
+const nomeSpecie = d => NOMI_SPECIE[d - 1];
+const casuale = a => a[Math.floor(Math.random() * a.length)];
+const mescola = a => { a = [...a]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const scegliN = (a, n) => mescola(a).slice(0, n);
+const limita = (v, a, b) => Math.max(a, Math.min(b, v));
+const coloreTipo = t => (TIPI[t] || TIPI.Incolore).c;
+const emojiTipo = t => (TIPI[t] || TIPI.Incolore).e;
+/* Carta "rappresentativa" di una specie (la più comune), usata per mostrare il Pokémon selvatico */
+function cartaRappresentativa(d) { const l = CARTE_SPECIE[d]; return [...l].sort((a, b) => RARITA.indexOf(a.r) - RARITA.indexOf(b.r))[0]; }
+const attesa = ms => new Promise(r => setTimeout(r, ms));
+
+/* =========================================================
+   SALVATAGGIO (localStorage) + ENERGIA GIORNALIERA
+   ========================================================= */
+let stato;
+function statoIniziale() {
+  return { v: 1, possedute: {}, energia: USCITE_AL_GIORNO, giorno: oggi(), serieComuni: 0, tutorialFatto: false, suono: true,
+           statistiche: { cacce: 0, fughe: 0 }, premiVisti: 0 };
+}
+/* Data locale (non UTC!) in formato AAAA-MM-GG: l'energia si ricarica a mezzanotte locale */
+function oggi() { const d = new Date(); return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); }
+function carica() {
+  try { const s = JSON.parse(localStorage.getItem(CHIAVE_SALVATAGGIO)); if (s && s.v === 1) return Object.assign(statoIniziale(), s); } catch (e) {}
+  return statoIniziale();
+}
+function salva() { try { localStorage.setItem(CHIAVE_SALVATAGGIO, JSON.stringify(stato)); } catch (e) {} }
+/* Ricarica l'energia se è cambiato il giorno. Ritorna true se ha ricaricato. */
+function controllaGiorno() {
+  if (stato.giorno !== oggi()) { stato.giorno = oggi(); stato.energia = USCITE_AL_GIORNO; salva(); aggiornaUI(); return true; }
+  return false;
+}
+const numPossedute = () => Object.keys(stato.possedute).filter(id => CARTA_PER_ID[id]).length;
+const possiede = id => !!stato.possedute[id];
+function rangoAttuale() { return RANGHI[Math.min(RANGHI.length - 1, Math.floor(numPossedute() / 25))]; }
+const luogoSbloccato = id => numPossedute() >= LUOGHI[id].sblocco;
+
+/* =========================================================
+   IMMAGINI: URL ufficiali TCGdex + cache offline in IndexedDB
+   Le carte possedute (e un'anteprima di ogni Pokémon) vengono salvate sul dispositivo
+   così l'album funziona anche senza internet.
+   ========================================================= */
+const urlRemoto = (c, g = "low") => IMG_BASE + c.i + (g === "high" ? "/high.webp" : "/low.webp");
+let _db = null; const _urlMem = new Map();
+function apriDB() {
+  return _db || (_db = new Promise(res => {
+    try { const r = indexedDB.open("pokealbum-immagini", 1);
+      r.onupgradeneeded = () => r.result.createObjectStore("img");
+      r.onsuccess = () => res(r.result); r.onerror = () => res(null); r.onblocked = () => res(null);
+    } catch (e) { res(null); }
+  }));
+}
+async function dbGet(k) { const db = await apriDB(); if (!db) return null; return new Promise(res => { try { const q = db.transaction("img").objectStore("img").get(k); q.onsuccess = () => res(q.result || null); q.onerror = () => res(null); } catch (e) { res(null); } }); }
+async function dbPut(k, v) { const db = await apriDB(); if (!db) return; return new Promise(res => { try { const t = db.transaction("img", "readwrite"); t.objectStore("img").put(v, k); t.oncomplete = () => res(); t.onerror = () => res(); } catch (e) { res(); } }); }
+/* Restituisce l'URL da usare: copia offline se presente, altrimenti l'URL ufficiale */
+async function urlImmagine(c, g = "low") {
+  const k = c.id + ":" + g;
+  if (_urlMem.has(k)) return _urlMem.get(k);
+  const blob = await dbGet(k);
+  const u = blob ? URL.createObjectURL(blob) : urlRemoto(c, g);
+  if (blob) _urlMem.set(k, u);
+  return u;
+}
+async function scaricaImmagine(c, g = "low") {
+  const k = c.id + ":" + g;
+  if (_urlMem.has(k) || await dbGet(k)) return true;
+  if (!navigator.onLine) return false;
+  /* Alcuni file del CDN hanno intestazioni CORS doppie e il browser li rifiuta: si provano formati alternativi */
+  const base = IMG_BASE + c.i + "/" + g;
+  for (const ext of [".webp", ".png", ".jpg"]) {
+    try { const r = await fetch(base + ext); if (r.ok) { await dbPut(k, await r.blob()); return true; } } catch (e) {}
+  }
+  return false;
+}
+/* Precarica in background: prima le carte possedute, poi un'anteprima per ogni Pokémon */
+let _precaricaInCorso = false;
+async function precaricaImmagini() {
+  if (_precaricaInCorso || !navigator.onLine) return; _precaricaInCorso = true;
+  try {
+    const lista = [];
+    Object.keys(stato.possedute).forEach(id => { const c = CARTA_PER_ID[id]; if (c) { lista.push([c, "low"], [c, "high"]); } });
+    for (let d = 1; d <= 151; d++) lista.push([cartaRappresentativa(d), "low"]);
+    for (const [c, g] of lista) { if (!navigator.onLine) break; const ok = await scaricaImmagine(c, g); await attesa(ok ? 120 : 400); }
+  } finally { _precaricaInCorso = false; }
+}
+/* Carta segnaposto (SVG) quando l'immagine non è disponibile */
+function segnaposto(c) {
+  const col = coloreTipo(c.t), nome = (c.n || "").replace(/[<>&]/g, "");
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 880"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${col}"/><stop offset="1" stop-color="#fff6c9"/></linearGradient></defs>
+  <rect width="630" height="880" rx="40" fill="#ffcb05"/><rect x="28" y="28" width="574" height="824" rx="26" fill="url(#g)"/>
+  <circle cx="110" cy="130" r="40" fill="#fff" opacity=".7"/><circle cx="520" cy="740" r="70" fill="#fff" opacity=".4"/>
+  <path d="M40 520 L200 360 L330 500 L450 380 L590 520 Z" fill="#fff" opacity=".35"/>
+  <text x="315" y="120" font-size="64" font-weight="900" text-anchor="middle" font-family="Arial Rounded MT Bold,Arial,sans-serif" fill="#23284f">${nome}</text>
+  <text x="315" y="480" font-size="230" text-anchor="middle">${emojiTipo(c.t)}</text>
+  <text x="315" y="640" font-size="120" text-anchor="middle" font-weight="900" fill="#fff" stroke="#23284f" stroke-width="6" paint-order="stroke">?</text>
+  <text x="315" y="800" font-size="46" font-weight="800" text-anchor="middle" font-family="Arial,sans-serif" fill="#23284f">Immagine non disponibile</text></svg>`;
+  return "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg);
+}
+/* Imposta l'immagine di un <img>, con fallback al segnaposto */
+function impostaImg(img, c, g = "low") {
+  img.alt = c.n; let provato = false;
+  img.onerror = () => { if (!provato) { provato = true; img.src = segnaposto(c); } };
+  urlImmagine(c, g).then(u => { img.src = u; });
+}
+/* Rende un elemento ".art" con l'illustrazione ritagliata della carta */
+function creaArt(d, larghezza = 260, extra = "") {
+  const c = cartaRappresentativa(d);
+  const el = document.createElement("div");
+  el.className = "art " + extra; el.style.setProperty("--w", typeof larghezza === "number" ? larghezza + "px" : larghezza);
+  el.style.setProperty("--tc", coloreTipo(c.t));
+  el.innerHTML = `<div class="fb">${emojiTipo(c.t)}</div>`;
+  urlImmagine(c, "low").then(u => { const t = new Image(); t.onload = () => { el.style.backgroundImage = `url("${u}")`; }; t.onerror = () => el.classList.add("noart"); t.src = u; });
+  return el;
+}
+
+/* =========================================================
+   AUDIO (Web Audio API, leggero). Si può disattivare dal pulsante 🔊
+   ========================================================= */
+let _audio = null;
+function audio() { if (!_audio) { try { _audio = new (window.AudioContext || window.webkitAudioContext)(); } catch (e) {} } if (_audio && _audio.state === "suspended") _audio.resume(); return _audio; }
+function nota(freq, dur = .15, tipo = "sine", vol = .12, ritardo = 0) {
+  if (!stato.suono) return; const a = audio(); if (!a) return;
+  const o = a.createOscillator(), g = a.createGain(), t = a.currentTime + ritardo;
+  o.type = tipo; o.frequency.value = freq; g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(vol, t + .02); g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+  o.connect(g).connect(a.destination); o.start(t); o.stop(t + dur + .05);
+}
+const suoni = {
+  tap: () => nota(520, .07, "triangle", .08),
+  ok: () => { nota(660, .12, "triangle"); nota(880, .18, "triangle", .12, .1); },
+  no: () => { nota(220, .22, "sawtooth", .07); nota(180, .25, "sawtooth", .07, .12); },
+  vittoria: () => [523, 659, 784, 1047].forEach((f, i) => nota(f, .22, "triangle", .12, i * .11)),
+  rara: () => [523, 659, 784, 1047, 1319, 1568].forEach((f, i) => nota(f, .3, "triangle", .12, i * .09)),
+  clic: () => { nota(900, .05, "square", .06); nota(1200, .08, "square", .06, .06); }
+};
+
+/* =========================================================
+   INTERFACCIA: schermate, toast, modali
+   ========================================================= */
+function vai(id) {
+  $$(".screen").forEach(s => s.classList.toggle("active", s.id === id));
+  const sc = $("#" + id); if (sc) sc.scrollTop = 0;
+  if (id === "home") aggiornaHome();
+  if (id === "mappa") disegnaMappa();
+  if (id === "album") disegnaAlbum();
+}
+let _toastT;
+function toast(msg, ms = 2600) { const t = $("#toast"); t.textContent = msg; t.classList.add("on"); clearTimeout(_toastT); _toastT = setTimeout(() => t.classList.remove("on"), ms); }
+/* Modale generica: ritorna una Promise con il valore del pulsante premuto */
+function modale({ titolo = "", html = "", bottoni = [{ testo: "OK", valore: true, classe: "" }], chiudibile = false }) {
+  return new Promise(res => {
+    const ov = $("#modale");
+    ov.innerHTML = `<div class="modale"><h3>${titolo}</h3><div class="mcorpo">${html}</div><div class="bottoni"></div></div>`;
+    const box = $(".bottoni", ov);
+    bottoni.forEach(b => { const bt = document.createElement("button"); bt.className = "btn " + (b.classe || ""); bt.innerHTML = b.testo;
+      bt.onclick = () => { ov.classList.remove("on"); suoni.tap(); res(b.valore); }; box.appendChild(bt); });
+    ov.onclick = e => { if (chiudibile && e.target === ov) { ov.classList.remove("on"); res(null); } };
+    ov.classList.add("on");
+  });
+}
+function simboliEnergia(el) {
+  el.innerHTML = ""; for (let i = 0; i < USCITE_AL_GIORNO; i++) { const b = document.createElement("span"); b.className = "ball" + (i < stato.energia ? "" : " vuota"); el.appendChild(b); }
+}
+function aggiornaUI() { ["homeEnergia", "mappaEnergia", "giocoEnergia"].forEach(i => simboliEnergia($("#" + i))); aggiornaHome(); $("#btnSuono").textContent = stato.suono ? "🔊" : "🔇"; }
+function aggiornaHome() {
+  const n = numPossedute(), tot = CARTE.length;
+  $("#homeContatore").textContent = `Hai ${n} carte su ${tot}`;
+  $("#homeRango").textContent = "🎖️ " + rangoAttuale();
+  $("#homeBarra").style.width = (n / tot * 100) + "%";
+}
+
+/* ---------- Tutorial ---------- */
+const PASSI_TUTORIAL = [
+  { e: "👋", t: "Benvenuto, Allenatore!", p: "Qui colleziona le vere carte Pokémon italiane nel tuo album magico!" },
+  { e: "🗺️", t: "Vai a Caccia!", p: "Scegli un luogo sulla mappa. Appare un Pokémon selvatico: per catturarlo devi vincere un gioco o un quiz!" },
+  { e: "⭐", t: "Più sei bravo, più è raro!", p: "Un punteggio alto ti porta carte Rare e Ultra rare. Se vai male il Pokémon può scappare… ma puoi riprovare!" },
+  { e: "🎯", t: "5 uscite al giorno", p: "Ogni caccia consuma una uscita. A mezzanotte tornano tutte e 5!" },
+  { e: "📖", t: "Il tuo Album", p: "Le carte catturate finiscono nell'album. Ogni 25 carte sblocchi nuovi luoghi e sorprese. Buona fortuna!" }
+];
+async function mostraTutorial() {
+  for (let i = 0; i < PASSI_TUTORIAL.length; i++) {
+    const p = PASSI_TUTORIAL[i], ultimo = i === PASSI_TUTORIAL.length - 1;
+    const pun = PASSI_TUTORIAL.map((_, k) => `<i class="${k === i ? "on" : ""}"></i>`).join("");
+    const r = await modale({ titolo: p.t, html: `<div class="grande-emoji">${p.e}</div><p>${p.p}</p><div class="puntini">${pun}</div>`,
+      bottoni: [...(i > 0 ? [{ testo: "⬅", valore: "indietro", classe: "blu" }] : []), { testo: ultimo ? "Inizia! 🚀" : "Avanti ➡", valore: "avanti", classe: ultimo ? "verde" : "" }] });
+    if (r === "indietro") i -= 2;
+  }
+  stato.tutorialFatto = true; salva();
+}
+
+/* ---------- Premi / traguardi ---------- */
+function mostraPremi() {
+  const n = numPossedute();
+  const html = `<p>Ogni 25 carte diverse sblocchi qualcosa! Ne hai <b>${n}</b>.</p><div class="lista-premi">` +
+    PREMI.map(p => `<div class="premio ${n >= p.n ? "on" : ""}"><span class="e">${n >= p.n ? p.e : "🔒"}</span><span><b>${p.n} carte</b> — ${p.t}<small>${p.d}</small></span></div>`).join("") + `</div>`;
+  modale({ titolo: "🏆 I tuoi premi", html, bottoni: [{ testo: "Chiudi", valore: true }], chiudibile: true });
+}
+
+/* ---------- Impostazioni / area genitori (protetta da una piccola moltiplicazione) ---------- */
+async function apriImpostazioni() {
+  const a = 6 + Math.floor(Math.random() * 4), b = 6 + Math.floor(Math.random() * 4);
+  const r = await modale({ titolo: "👨‍👩‍👧 Area genitori", html: `<p>Per entrare risolvi: quanto fa <b>${a} × ${b}</b>?</p><input id="rispGen" type="number" inputmode="numeric" style="font-size:1.8rem;width:140px;text-align:center;border:4px solid var(--blu);border-radius:16px;padding:8px;-webkit-user-select:text;user-select:text">`,
+    bottoni: [{ testo: "Annulla", valore: false, classe: "blu" }, { testo: "Entra", valore: true }] });
+  if (!r) return;
+  if (parseInt(($("#rispGen") || {}).value, 10) !== a * b) { toast("Risposta sbagliata 🙂"); return; }
+  const scelta = await modale({ titolo: "⚙️ Impostazioni",
+    html: `<div class="riga-imp"><span>Suoni: <b>${stato.suono ? "accesi" : "spenti"}</b></span></div><p style="font-size:1rem">Uscite rimaste oggi: <b>${stato.energia}/${USCITE_AL_GIORNO}</b></p>`,
+    bottoni: [
+      { testo: stato.suono ? "🔇 Spegni suoni" : "🔊 Accendi suoni", valore: "suono", classe: "blu piccolo" },
+      { testo: "🔄 Ricarica uscite", valore: "energia", classe: "verde piccolo" },
+      { testo: "❓ Rivedi tutorial", valore: "tutorial", classe: "blu piccolo" },
+      { testo: "🗑️ Azzera tutto", valore: "reset", classe: "rosso piccolo" },
+      { testo: "Chiudi", valore: null, classe: "piccolo" }] });
+  if (scelta === "suono") { stato.suono = !stato.suono; salva(); aggiornaUI(); }
+  else if (scelta === "energia") { stato.energia = USCITE_AL_GIORNO; salva(); aggiornaUI(); toast("Uscite ricaricate!"); }
+  else if (scelta === "tutorial") mostraTutorial();
+  else if (scelta === "reset") {
+    const ok = await modale({ titolo: "Sei sicuro?", html: "<p>Perderai <b>tutte le carte</b> e i progressi. Non si può annullare!</p>", bottoni: [{ testo: "No, annulla", valore: false, classe: "verde" }, { testo: "Sì, azzera", valore: true, classe: "rosso" }] });
+    if (ok) { stato = statoIniziale(); stato.tutorialFatto = true; salva(); aggiornaUI(); toast("Progressi azzerati"); }
+  }
+}
+
+/* =========================================================
+   CONFETTI (canvas) – per carte rare e ultra rare
+   ========================================================= */
+let _confettiRaf = 0;
+function confetti(quanti = 150) {
+  const cv = $("#confetti"), ctx = cv.getContext("2d"), dpr = window.devicePixelRatio || 1;
+  cv.width = innerWidth * dpr; cv.height = innerHeight * dpr; ctx.scale(dpr, dpr);
+  const cols = ["#ffcb05", "#ee1515", "#3b4cca", "#3fbf5a", "#ff7ad9", "#4fd1ff", "#ff9f1c"];
+  const ps = Array.from({ length: quanti }, () => ({ x: Math.random() * innerWidth, y: -20 - Math.random() * innerHeight * .6, vx: (Math.random() - .5) * 4, vy: 2 + Math.random() * 4,
+    r: Math.random() * 6.28, vr: (Math.random() - .5) * .3, s: 8 + Math.random() * 10, c: casuale(cols), stella: Math.random() < .25 }));
+  const t0 = performance.now(); cancelAnimationFrame(_confettiRaf);
+  (function frame(t) {
+    ctx.clearRect(0, 0, innerWidth, innerHeight); let vivo = false;
+    ps.forEach(p => { p.x += p.vx; p.y += p.vy; p.vy += .05; p.r += p.vr; if (p.y < innerHeight + 30) vivo = true;
+      ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(p.r);
+      if (p.stella) { ctx.font = p.s * 1.8 + "px serif"; ctx.textAlign = "center"; ctx.fillText("⭐", 0, 0); } else { ctx.fillStyle = p.c; ctx.fillRect(-p.s / 2, -p.s / 4, p.s, p.s / 2); }
+      ctx.restore(); });
+    if (vivo && t - t0 < 6000) _confettiRaf = requestAnimationFrame(frame); else ctx.clearRect(0, 0, innerWidth, innerHeight);
+  })(t0);
+}
+
+/* =========================================================
+   MAPPA
+   ========================================================= */
+function atmosfera(id) {
+  const el = document.createElement("div"); el.className = "atm";
+  const r = (a, b) => a + Math.random() * (b - a);
+  const sp = (txt, cls, v) => { const s = document.createElement("span"); s.textContent = txt; if (cls) s.className = cls; Object.entries(v).forEach(([k, x]) => s.style.setProperty("--" + k, x)); el.appendChild(s); };
+  const cade = (emojis, n, tmin, tmax) => { for (let i = 0; i < n; i++) sp(casuale(emojis), "", { x: r(0, 88) + "%", t: r(tmin, tmax) + "s", d: -r(0, 6) + "s", dx: r(-30, 40) + "px", s: r(.9, 1.5) + "rem" }); };
+  const brilla = (emojis, n) => { for (let i = 0; i < n; i++) sp(casuale(emojis), "brilla", { x: r(4, 88) + "%", y: r(5, 70) + "%", t: r(1.4, 3) + "s", d: -r(0, 3) + "s", s: r(.8, 1.4) + "rem" }); };
+  switch (id) {
+    case "bosco": cade(["🍃", "🍂", "🍃", "🌸"], 8, 4, 7); break;
+    case "citta": brilla(["✨", "💡", "✨"], 7); for (let i = 0; i < 2; i++) sp("🕊️", "scorri", { y: r(8, 40) + "%", t: r(8, 12) + "s", d: -r(0, 8) + "s", s: "1.1rem" }); break;
+    case "grotta": cade(["💧"], 4, 2.2, 3.5); brilla(["💎", "✨", "✨"], 6); sp("🦇", "scorri", { y: "20%", t: "7s", d: "-2s", s: "1.2rem" }); break;
+    case "spiaggia": sp("🌊", "onda", { t: "3.6s", d: "0s" }); sp("🌊", "onda", { t: "4.4s", d: "-1.5s", x: "0" }); for (let i = 0; i < 4; i++) sp("○", "sale", { x: r(5, 85) + "%", t: r(3, 5) + "s", d: -r(0, 4) + "s", dx: r(-10, 10) + "px", s: ".9rem" }); break;
+    case "montagna": cade(["❄️", "❄️", "❅"], 8, 4, 7); sp("☁️", "scorri", { y: "10%", t: "10s", d: "-3s", s: "1.8rem" }); break;
+    case "laboratorio": brilla(["⚡", "✨", "⚡"], 7); for (let i = 0; i < 3; i++) sp("🧪", "sale", { x: r(5, 85) + "%", t: r(3, 5) + "s", d: -r(0, 4) + "s", dx: r(-10, 10) + "px", s: "1rem" }); break;
+  }
+  return el;
+}
+function disegnaMappa() {
+  const box = $("#mappaBox"); $$(".luogo", box).forEach(e => e.remove());
+  const n = numPossedute();
+  ORDINE_LUOGHI.forEach(id => {
+    const L = LUOGHI[id], bloccato = n < L.sblocco;
+    const b = document.createElement("button");
+    b.className = `luogo ${L.classe}${bloccato ? " bloccato" : ""}${stato.luogoNuovo === id ? " nuovo" : ""}`; b.style.left = L.x + "%"; b.style.top = L.y + "%";
+    b.setAttribute("aria-label", L.nome);
+    b.innerHTML = `<div class="sub">${bloccato ? "servono " + L.sblocco + " carte" : L.sotto}</div><div class="emj">${L.emoji}</div><div class="lbl">${L.nome}</div>${bloccato ? '<div class="lucchetto">🔒</div>' : ""}`;
+    if (!bloccato) b.insertBefore(atmosfera(id), b.firstChild);
+    b.onclick = () => { suoni.tap(); inizioCaccia(id); };
+    box.appendChild(b);
+  });
+  stato.luogoNuovo = null;
+  // Effetti sbloccati con i traguardi
+  const fx = $("#mappaFx"); fx.innerHTML = ""; const r = (a, b) => a + Math.random() * (b - a);
+  const ha = k => PREMI.some(p => p.fx === k && n >= p.n);
+  const aggiungi = (txt, cls, v) => { const s = document.createElement("span"); s.textContent = txt; if (cls) s.className = cls; Object.entries(v || {}).forEach(([k, x]) => s.style.setProperty("--" + k, x)); fx.appendChild(s); };
+  if (ha("stelle")) for (let i = 0; i < 6; i++) aggiungi("🌠", "", { x: r(0, 95) + "%", t: r(5, 9) + "s", d: -r(0, 8) + "s", dx: "120px", s: "1.6rem" });
+  if (ha("arcobaleno")) aggiungi("🌈", "arcobaleno");
+  if (ha("palloncini")) for (let i = 0; i < 5; i++) aggiungi(casuale(["🎈", "🎈", "🎀"]), "palloncino", { x: r(2, 94) + "%", t: r(7, 11) + "s", d: -r(0, 9) + "s", dx: r(-20, 20) + "px" });
+  if (ha("pika")) aggiungi("⚡🐭💨", "pika");
+  if (ha("fuochi")) for (let i = 0; i < 4; i++) aggiungi(casuale(["🎆", "🎇"]), "fuoco", { x: r(5, 85) + "%", y: r(5, 45) + "%", t: r(1.6, 2.6) + "s", d: -r(0, 3) + "s" });
+}
+
+/* =========================================================
+   ALBUM
+   ========================================================= */
+const filtro = { rar: "tutte", tipo: "tutti" };
+const FILTRI_RAR = [["tutte", "Tutte"], ["possedute", "✅ Mie"], ["comune", "● Comuni"], ["non-comune", "◆ Non comuni"], ["rara", "★ Rare"], ["ultra-rara", "✦ Ultra rare"]];
+function disegnaAlbum() {
+  const fr = $("#filtriRar"), ft = $("#filtriTipo");
+  fr.innerHTML = ""; ft.innerHTML = "";
+  FILTRI_RAR.forEach(([k, t]) => { const b = document.createElement("button"); b.className = "chip" + (filtro.rar === k ? " on" : ""); b.textContent = t; b.onclick = () => { filtro.rar = k; suoni.tap(); disegnaAlbum(); }; fr.appendChild(b); });
+  const tipiPresenti = Object.keys(TIPI).filter(t => CARTE.some(c => c.t === t));
+  [["tutti", "Tutti i tipi"], ...tipiPresenti.map(t => [t, emojiTipo(t) + " " + t])].forEach(([k, t]) => { const b = document.createElement("button"); b.className = "chip" + (filtro.tipo === k ? " on" : ""); b.textContent = t; b.onclick = () => { filtro.tipo = k; suoni.tap(); disegnaAlbum(); }; ft.appendChild(b); });
+  const lista = listaFiltrata();
+  $("#albumConta").textContent = `📖 ${numPossedute()} / ${CARTE.length}`;
+  const g = $("#albumGriglia"); g.innerHTML = "";
+  if (!lista.length) { g.innerHTML = `<div class="vuoto" style="grid-column:1/-1">Nessuna carta qui… per ora! Vai a caccia! 🎯</div>`; return; }
+  const frag = document.createDocumentFragment(); const possedute = lista.filter(c => possiede(c.id));
+  lista.forEach(c => {
+    const b = document.createElement("button"); b.className = "cella";
+    if (possiede(c.id)) {
+      const R = RARITA_INFO[c.r];
+      b.classList.add("r-" + c.r); if (c.r === "ultra-rara") b.classList.add("ultra");
+      b.innerHTML = `<div class="carta"><img loading="lazy" decoding="async">${stato.possedute[c.id] > 1 ? `<span class="copie">×${stato.possedute[c.id]}</span>` : ""}${(stato.nuove || []).includes(c.id) ? '<span class="nuova-tag">NUOVA!</span>' : ""}</div>
+        <div class="nome">${c.n}</div><div class="meta"><span class="chip-tipo" style="--tc:${coloreTipo(c.t)}">${emojiTipo(c.t)} ${c.t}</span><span class="chip-rar" style="--rc:${R.colore}">${R.simbolo} ${R.nome}</span></div>`;
+      impostaImg($("img", b), c, "low");
+      b.onclick = () => { suoni.tap(); apriViewer(possedute, possedute.indexOf(c)); };
+    } else {
+      b.innerHTML = `<div class="carta sil"><b>???</b><small>#${String(c.d).padStart(3, "0")}</small></div><div class="nome">???</div><div class="meta"><span class="chip-rar" style="--rc:#9aa0b5">Carta misteriosa</span></div>`;
+      b.onclick = () => { suoni.tap(); toast(`Ti aspetta una carta di tipo ${c.t} ${emojiTipo(c.t)}! Vai a caccia!`); };
+    }
+    frag.appendChild(b);
+  });
+  g.appendChild(frag);
+}
+function listaFiltrata() {
+  return CARTE.filter(c => (filtro.tipo === "tutti" || c.t === filtro.tipo) &&
+    (filtro.rar === "tutte" || (filtro.rar === "possedute" ? possiede(c.id) : c.r === filtro.rar)));
+}
+/* Visualizzatore a schermo intero con animazione e piccola inclinazione 3D al tocco */
+function apriViewer(lista, idx) {
+  const ov = $("#viewer"); let i = idx;
+  const mostra = () => {
+    const c = lista[i], R = RARITA_INFO[c.r];
+    stato.nuove = (stato.nuove || []).filter(x => x !== c.id); salva();
+    ov.innerHTML = `<div class="viewer-riga"><button class="btn blu tondo" id="vPrec" aria-label="Precedente">◀</button><div class="viewer-carta ${c.r === "ultra-rara" ? "ultra" : ""}" style="--rc:${R.colore}"><img></div><button class="btn blu tondo" id="vSucc" aria-label="Successiva">▶</button></div>
+      <div class="viewer-info"><b>${c.n}</b><span class="chip-tipo" style="--tc:${coloreTipo(c.t)}">${emojiTipo(c.t)} ${c.t}</span><span class="chip-rar" style="--rc:${R.colore}">${R.simbolo} ${R.nome}</span><span>Set: ${c.s}</span><span>Ne hai: ${stato.possedute[c.id]}</span></div>
+      <button class="btn rosso" id="vChiudi">✖ Chiudi</button>`;
+    const carta = $(".viewer-carta", ov); impostaImg($("img", ov), c, "high");
+    // se la versione grande non è disponibile offline, usa quella piccola
+    $("img", ov).addEventListener("error", () => urlImmagine(c, "low").then(u => { $("img", ov).src = u; }), { once: true });
+    const incl = e => { const r = carta.getBoundingClientRect(), x = ((e.clientX - r.left) / r.width - .5), y = ((e.clientY - r.top) / r.height - .5); carta.style.transform = `perspective(800px) rotateY(${x * 24}deg) rotateX(${-y * 24}deg)`; };
+    carta.addEventListener("pointermove", incl); carta.addEventListener("pointerdown", incl); carta.addEventListener("pointerup", () => carta.style.transform = ""); carta.addEventListener("pointerleave", () => carta.style.transform = "");
+    $("#vPrec").onclick = () => { i = (i - 1 + lista.length) % lista.length; suoni.tap(); mostra(); };
+    $("#vSucc").onclick = () => { i = (i + 1) % lista.length; suoni.tap(); mostra(); };
+    $("#vChiudi").onclick = chiudi;
+    if (lista.length < 2) { $("#vPrec").style.visibility = $("#vSucc").style.visibility = "hidden"; }
+  };
+  const chiudi = () => { ov.classList.remove("on"); if ($("#album").classList.contains("active")) disegnaAlbum(); };
+  ov.onclick = e => { if (e.target === ov) chiudi(); };
+  mostra(); ov.classList.add("on");
+}
+
+/* =========================================================
+   CACCIA: flusso generale
+   ========================================================= */
+let partita = null; // { luogo, dex, inCorso, finito, timers[], raf }
+
+/* Algoritmo di rarità (come da specifica). Il parametro bonusPity aggiunge fortuna dopo molte carte comuni di fila */
+function calcolaRarità(punteggio, luogo, bonusPity = 0) {
+  let chance = punteggio * 0.55;
+  if (luogo === "montagna") chance += 12;
+  if (luogo === "laboratorio") chance += 22;
+  chance += bonusPity; // pity system
+  const r = Math.random() * 100;
+  if (r < chance * 0.12) return "ultra-rara";
+  if (r < chance * 0.35) return "rara";
+  if (r < chance * 0.70) return "non-comune";
+  return "comune";
+}
+/* Pity: dopo 8 comuni consecutivi la probabilità cresce leggermente (max +30) */
+const bonusPityAttuale = () => stato.serieComuni >= 8 ? Math.min(10 + (stato.serieComuni - 8) * 3, 30) : 0;
+
+function scegliSpecieSelvatica(id) {
+  const pool = LUOGHI[id].pool;
+  if (pool) return casuale(pool);
+  // Laboratorio: tutti i 151, più probabili evoluzioni finali e leggendari
+  const pesi = []; for (let d = 1; d <= 151; d++) { const w = LEGGENDARI.includes(d) ? 4 : (EVO_DA[d] && !EVO_A[d]) ? 3 : 1; for (let k = 0; k < w; k++) pesi.push(d); }
+  return casuale(pesi);
+}
+function scegliCarta(dex, rar, maxRar) {
+  const lista = CARTE_SPECIE[dex], idx = RARITA.indexOf(rar), max = RARITA.indexOf(maxRar);
+  const ordine = []; for (let k = idx; k >= 0; k--) ordine.push(k); for (let k = idx + 1; k <= max; k++) ordine.push(k);
+  let cand = null;
+  for (const k of ordine) { const cs = lista.filter(c => c.r === RARITA[k]); if (cs.length) { cand = cs; break; } }
+  if (!cand) cand = lista;
+  const nuove = cand.filter(c => !possiede(c.id));
+  if (nuove.length) return casuale(nuove);
+  const altre = lista.filter(c => !possiede(c.id) && RARITA.indexOf(c.r) <= max);
+  return altre.length && Math.random() < .7 ? casuale(altre) : casuale(cand);
+}
+
+function pulisciPartita() {
+  if (!partita) return;
+  partita.timers.forEach(clearTimeout); partita.timers = []; cancelAnimationFrame(partita.raf);
+  (partita.pulizia || []).forEach(f => f()); partita.pulizia = [];
+}
+/* setTimeout che viene annullato se si esce dal gioco */
+function ritardo(fn, ms) { const P = partita; const t = setTimeout(() => { if (partita === P && !P.finito) fn(); }, ms); P.timers.push(t); return t; }
+
+function inizioCaccia(id) {
+  controllaGiorno();
+  const L = LUOGHI[id], n = numPossedute();
+  if (n < L.sblocco) { suoni.no(); toast(`🔒 Ti servono ${L.sblocco} carte per entrare! Ne hai ${n}.`); return; }
+  if (stato.energia <= 0) {
+    suoni.no();
+    modale({ titolo: "Che stanchezza! 😴", html: "<p>Hai finito le uscite di oggi. Domani a mezzanotte tornano tutte e <b>5</b>!<br>Intanto guarda il tuo album. 📖</p>",
+      bottoni: [{ testo: "📖 Album", valore: "album", classe: "blu" }, { testo: "OK", valore: null }] }).then(v => { if (v === "album") vai("album"); });
+    return;
+  }
+  pulisciPartita();
+  partita = { luogo: id, dex: scegliSpecieSelvatica(id), inCorso: false, finito: false, timers: [], pulizia: [], raf: 0 };
+  $("#giocoTitolo").textContent = `${L.emoji} ${L.nome}`;
+  vai("gioco"); mostraIntro();
+}
+function mostraIntro() {
+  const P = partita, L = LUOGHI[P.luogo], corpo = $("#giocoCorpo");
+  corpo.innerHTML = `<div class="intro"><div class="apparso">✨ Un Pokémon selvatico è apparso! ✨</div><div id="introArt"></div><h3>${nomeSpecie(P.dex)}</h3>
+    <div class="regole">${L.regola}</div><button class="btn grande verde" id="btnVia">▶ Via!</button></div>`;
+  $("#introArt").appendChild(creaArt(P.dex, 300, "selvatico"));
+  suoni.clic();
+  $("#btnVia").onclick = () => {
+    if (stato.energia <= 0) return;
+    stato.energia--; salva(); aggiornaUI(); P.inCorso = true; suoni.tap();
+    corpo.innerHTML = "";
+    const fine = punti => terminaGioco(P, punti);
+    ({ memory: giocoMemory, quiz: giocoQuiz, quizHard: giocoQuizHard, palla: giocoPalla, puzzle: giocoPuzzle, simon: giocoSimon })[L.gioco](corpo, fine);
+  };
+}
+$("#btnEsciGioco").onclick = async () => {
+  if (partita && partita.inCorso && !partita.finito) {
+    const ok = await modale({ titolo: "Vuoi uscire?", html: "<p>Se esci adesso <b>perdi questa uscita</b> e il Pokémon scappa!</p>", bottoni: [{ testo: "Resto!", valore: false, classe: "verde" }, { testo: "Esci", valore: true, classe: "rosso" }] });
+    if (!ok) return;
+    partita.finito = true; partita.inCorso = false; stato.statistiche.fughe++; salva();
+  }
+  pulisciPartita(); vai("mappa");
+};
+async function terminaGioco(P, punti) {
+  if (partita !== P || P.finito) return;
+  P.finito = true; P.inCorso = false; pulisciPartita();
+  await attesa(900); if (partita !== P) return;
+  mostraRisultato(P, Math.round(limita(punti, 0, 100)));
+}
+
+const MSG_STELLE = {
+  5: ["Grande Allenatore! 🌟", "Fantastico, sei un campione! 🏆", "Perfetto! Che bravura! 🎉"],
+  4: ["Bravissimo! 🎉", "Che bel lavoro! 👏", "Quasi perfetto! ✨"],
+  3: ["Bel lavoro! 👍", "Sei sulla strada giusta! 🚀", "Ben fatto, Allenatore! 😄"],
+  2: ["Ci sei quasi! 💪", "Buon tentativo! Riprova! 😊", "Stai migliorando! 🌱"],
+  1: ["Non mollare, riprova! 💛", "Ogni allenatore impara! 📚", "Forza, la prossima volta andrà meglio! 🍀"]
+};
+async function mostraRisultato(P, punteggio) {
+  const L = LUOGHI[P.luogo], corpo = $("#giocoCorpo"), stelle = limita(Math.ceil(punteggio / 20), 1, 5);
+  const stHtml = Array.from({ length: 5 }, (_, i) => `<i class="${i < stelle ? "" : "spenta"}" style="animation-delay:${i * .12}s">⭐</i>`).join("");
+  stato.statistiche.cacce++;
+  const pFuga = punteggio < 30 ? (30 - punteggio) / 30 * .85 : 0;
+  if (Math.random() < pFuga) {
+    stato.statistiche.fughe++; salva(); suoni.no();
+    corpo.innerHTML = `<div class="risultato"><div class="stelle">${stHtml}</div><div class="msg">Punteggio: ${punteggio}/100</div>
+      <div id="scappaBox" style="height:120px"><span class="scappa">💨</span></div>
+      <div class="msg no">Oh no! ${nomeSpecie(P.dex)} è scappato! Quasi ce l'avevi!</div><div class="msg">${casuale(MSG_STELLE[stelle])}</div>
+      <div class="azioni"></div></div>`;
+    azioniRisultato(P);
+    return;
+  }
+  const rar = (() => { let r = calcolaRarità(punteggio, P.luogo, bonusPityAttuale()); const max = RARITA.indexOf(L.maxRar); return RARITA.indexOf(r) > max ? L.maxRar : r; })();
+  const carta = scegliCarta(P.dex, rar, L.maxRar), prima = numPossedute(), nuova = !possiede(carta.id);
+  stato.possedute[carta.id] = (stato.possedute[carta.id] || 0) + 1;
+  stato.serieComuni = carta.r === "comune" ? stato.serieComuni + 1 : 0;
+  if (nuova) stato.nuove = [...(stato.nuove || []), carta.id];
+  salva(); aggiornaUI();
+  scaricaImmagine(carta, "low").then(() => scaricaImmagine(carta, "high"));
+  const R = RARITA_INFO[carta.r], speciale = carta.r === "rara" || carta.r === "ultra-rara";
+  corpo.innerHTML = `<div class="risultato"><div class="stelle">${stHtml}</div><div class="msg">${casuale(MSG_STELLE[stelle])}</div>
+    <div id="rivela" style="min-height:150px;display:flex;flex-direction:column;align-items:center;gap:10px"><div class="pokeball-grande"></div><div class="msg">Punteggio: ${punteggio}/100 — Cattura in corso…</div></div></div>`;
+  suoni.clic(); await attesa(1600); if (partita !== P) return;
+  const riv = $("#rivela");
+  riv.innerHTML = `<div class="badge-rar" style="background:${R.colore}">${R.simbolo} ${R.nome}</div>
+    <button class="carta r-${carta.r}" id="cartaRis" style="width:min(52vw,calc((100dvh - 470px)*.716),300px);min-width:150px;border:0;padding:0;animation:festa2 .6s"><img></button>
+    <div class="msg ok">${nuova ? "🎉 Nuova carta: " : "Doppione: "}${carta.n}!</div>`;
+  impostaImg($("img", riv), carta, "low");
+  $("#cartaRis").onclick = () => apriViewer([carta], 0);
+  (speciale ? suoni.rara : suoni.vittoria)();
+  if (speciale) confetti(carta.r === "ultra-rara" ? 260 : 160);
+  const az = document.createElement("div"); az.className = "azioni"; $(".risultato", corpo).appendChild(az); azioniRisultato(P);
+  // Traguardi ogni 25 carte
+  const dopo = numPossedute();
+  for (const p of PREMI) {
+    if (prima < p.n && dopo >= p.n) {
+      await attesa(1400); if (partita !== P) return;
+      const l = ORDINE_LUOGHI.find(k => LUOGHI[k].sblocco === p.n); if (l) stato.luogoNuovo = l; salva();
+      suoni.rara(); confetti(220);
+      await modale({ titolo: "🎉 Traguardo: " + p.n + " carte!", html: `<div class="grande-emoji">${p.e}</div><p><b>${p.t}</b><br>${p.d}</p>`, bottoni: [{ testo: "Evviva! 🎊", valore: true, classe: "verde" }] });
+    }
+  }
+}
+function azioniRisultato(P) {
+  const az = $("#giocoCorpo .azioni");
+  const mk = (t, cl, fn) => { const b = document.createElement("button"); b.className = "btn " + cl; b.innerHTML = t; b.onclick = fn; az.appendChild(b); };
+  if (stato.energia > 0) mk(`🎯 Ancora! (${stato.energia})`, "verde", () => { suoni.tap(); inizioCaccia(P.luogo); });
+  mk("🗺️ Mappa", "blu", () => { pulisciPartita(); vai("mappa"); });
+  mk("📖 Album", "", () => { pulisciPartita(); vai("album"); });
+}
+
+/* =========================================================
+   MINI-GIOCO 1: MEMORY (Bosco)
+   ========================================================= */
+function giocoMemory(corpo, fine) {
+  const P = partita, specie = scegliN(LUOGHI.bosco.pool, 6);
+  const tessere = mescola([...specie, ...specie]);
+  corpo.innerHTML = `<div class="hud"><span>👣 Mosse: <b id="mMosse">0</b></span><span>🧩 Coppie: <b id="mCoppie">0</b>/6</span></div><div class="msg" id="mMsg">Trova le coppie uguali!</div><div class="mem-grid" id="memGrid"></div>`;
+  const grid = $("#memGrid"); let prima = null, blocco = false, mosse = 0, coppie = 0;
+  tessere.forEach(d => {
+    const t = document.createElement("button"); t.className = "tessera"; t.dataset.d = d;
+    t.innerHTML = `<div class="f dorso"></div><div class="f fronte"></div>`;
+    $(".fronte", t).appendChild(creaArt(d, "100%")); $(".fronte", t).insertAdjacentHTML("beforeend", `<b>${nomeSpecie(d)}</b>`);
+    t.onclick = () => {
+      if (blocco || t.classList.contains("girata") || t.classList.contains("trovata")) return;
+      suoni.tap(); t.classList.add("girata");
+      if (!prima) { prima = t; return; }
+      mosse++; $("#mMosse").textContent = mosse; const a = prima; prima = null;
+      if (a.dataset.d === t.dataset.d) {
+        a.classList.replace("girata", "trovata"); t.classList.replace("girata", "trovata"); coppie++; $("#mCoppie").textContent = coppie; suoni.ok();
+        $("#mMsg").textContent = casuale(["Trovata! 🎉", "Che memoria! 🧠", "Bravo! ⭐"]); $("#mMsg").className = "msg ok";
+        if (coppie === 6) fine(limita(100 - (mosse - 6) * 5, 10, 100));
+      } else {
+        blocco = true; suoni.no(); $("#mMsg").textContent = "Ops, riprova! 🙂"; $("#mMsg").className = "msg";
+        ritardo(() => { a.classList.remove("girata"); t.classList.remove("girata"); blocco = false; }, 950);
+      }
+    };
+    grid.appendChild(t);
+  });
+}
+
+/* =========================================================
+   MINI-GIOCHI 2 e 3: QUIZ (Città) e QUIZ DIFFICILE (Laboratorio)
+   ========================================================= */
+// Tipi (usati nelle carte) di Pokémon "sicuri" per le domande sul tipo
+const TIPO_SPECIE = {};
+const _tipi = { Erba: [1, 2, 3, 43, 44, 45, 69, 70, 71, 102, 114], Fuoco: [4, 5, 6, 37, 38, 58, 59, 77, 78, 126, 136], Acqua: [7, 8, 9, 54, 55, 60, 61, 72, 79, 86, 90, 98, 116, 118, 120, 129, 130, 131, 134],
+  Lampo: [25, 26, 81, 100, 101, 125, 135, 145], Psico: [63, 64, 65, 96, 97, 122, 150, 151], Lotta: [56, 57, 66, 67, 68, 106, 107], Drago: [147, 148, 149] };
+Object.entries(_tipi).forEach(([t, l]) => l.forEach(d => TIPO_SPECIE[d] = t));
+const TIPI_QUIZ = Object.keys(_tipi);
+const _n = d => nomeSpecie(d);
+const TRIVIA_FACILI = () => [
+  { q: "Quale tipo batte il Fuoco?", ok: "Acqua", no: ["Erba", "Lotta", "Psico"] },
+  { q: "Quale tipo batte l'Erba?", ok: "Fuoco", no: ["Acqua", "Lampo", "Psico"] },
+  { q: "Quale tipo batte l'Acqua?", ok: "Lampo", no: ["Fuoco", "Psico", "Lotta"] },
+  { q: "Cosa usa un Allenatore per catturare i Pokémon?", ok: "Poké Ball", no: ["Retino", "Racchetta", "Fionda"] },
+  { q: "Di che colore è Pikachu?", ok: "Giallo", no: ["Rosso", "Blu", "Verde"] },
+  { q: "Quale Pokémon dorme moltissimo ed è enorme?", ok: _n(143), no: [_n(25), _n(129), _n(39)] },
+  { q: "Quale Pokémon è il topolino elettrico giallo?", ok: _n(25), no: [_n(19), _n(52), _n(133)] },
+  { q: "Come si chiama il Professore dei Pokémon di Biancavilla?", ok: "Prof. Oak", no: ["Prof. Olmo", "Prof. Platan", "Prof. Magnolia"] },
+  { q: "Quali sono i tre Pokémon iniziali di Kanto?", ok: `${_n(1)}, ${_n(4)}, ${_n(7)}`, no: [`${_n(25)}, ${_n(133)}, ${_n(39)}`, `${_n(16)}, ${_n(19)}, ${_n(10)}`, `${_n(129)}, ${_n(54)}, ${_n(79)}`] },
+  { q: "Con quale pietra Pikachu diventa Raichu?", ok: "Pietratuono", no: ["Pietrafocaia", "Pietraidrica", "Pietrafoglia"] }
+];
+const TRIVIA_DIFFICILI = () => [
+  { q: "Quale tipo batte il tipo Acqua?", ok: "Lampo", no: ["Fuoco", "Psico", "Lotta"] },
+  { q: "Quale uccello leggendario controlla il fuoco?", ok: _n(146), no: [_n(144), _n(145), _n(142)] },
+  { q: "Quale Pokémon è il clone di Mew creato dagli scienziati?", ok: _n(150), no: [_n(132), _n(137), _n(63)] },
+  { q: `Che cosa sa fare ${_n(132)}?`, ok: "Trasformarsi in altri Pokémon", no: ["Volare altissimo", "Sputare fuoco", "Dormire per un anno"] },
+  { q: "Quale Pokémon può evolversi in tante forme diverse?", ok: _n(133), no: [_n(25), _n(4), _n(74)] },
+  { q: "Quanti Pokémon ci sono nella prima generazione (Kanto)?", ok: "151", no: ["100", "150", "251"] },
+  { q: "Con quale pietra Pikachu diventa Raichu?", ok: "Pietratuono", no: ["Pietrafocaia", "Pietraidrica", "Pietrafoglia"] },
+  { q: "Quale Pokémon leggendario è il numero 151?", ok: _n(151), no: [_n(150), _n(144), _n(132)] }
+];
+const dom = (q, ok, errate, art) => { const opz = mescola([ok, ...errate]); return { q, art: art || null, opz, giusta: opz.indexOf(ok) }; };
+const altri = (escludi, n, pool) => scegliN((pool || Array.from({ length: 151 }, (_, i) => i + 1)).filter(d => !escludi.includes(d)), n).map(_n);
+const GEN = {
+  nome: () => { const d = casuale(LUOGHI.citta.pool); return dom("Come si chiama questo Pokémon?", _n(d), altri([d], 3), d); },
+  tipo: () => { const d = casuale(Object.keys(TIPO_SPECIE).map(Number)), t = TIPO_SPECIE[d]; return dom(`Di che tipo è ${_n(d)}?`, t, scegliN(TIPI_QUIZ.filter(x => x !== t), 3), d); },
+  evoA: dura => { const x = casuale(Object.keys(EVO_A).map(Number)); const ev = casuale(EVO_A[x]);
+    const pool = dura ? Object.keys(EVO_DA).map(Number) : null;
+    return dom(`In cosa si evolve ${_n(x)}?`, _n(ev), altri([x, ...EVO_A[x]], 3, pool), x); },
+  evoDa: dura => { const x = casuale(Object.keys(EVO_DA).map(Number)); const pre = EVO_DA[x];
+    const pool = dura ? Object.keys(EVO_A).map(Number) : null;
+    return dom(`Da quale Pokémon si evolve ${_n(x)}?`, _n(pre), altri([pre, x], 3, pool), x); },
+  catena: () => { const cand = Object.keys(EVO_A).map(Number).filter(a => EVO_A[a].length === 1 && EVO_A[EVO_A[a][0]] && EVO_A[EVO_A[a][0]].length === 1);
+    const a = casuale(cand), b = EVO_A[a][0], c = EVO_A[b][0];
+    return dom(`${_n(a)} → ${_n(b)} → ?`, _n(c), altri([a, b, c], 3, Object.keys(EVO_DA).map(Number)), c); },
+  numero: () => { const d = casuale([1, 4, 7, 25, 133, 150, 151, 129, 143, 6, 9, 3, 39, 52, 54, 94, 131, 149]); const sb = new Set();
+    while (sb.size < 3) { const v = limita(d + Math.floor((Math.random() - .5) * 40), 1, 151); if (v !== d) sb.add(v); }
+    return dom(`Che numero ha ${_n(d)} nel Pokédex?`, "N° " + d, [...sb].map(v => "N° " + v), d); },
+  trivia: dura => { const t = casuale(dura ? TRIVIA_DIFFICILI() : TRIVIA_FACILI()); return dom(t.q, t.ok, t.no); }
+};
+function generaQuiz(n, dura) {
+  const ordine = dura ? ["evoA", "evoDa", "catena", "numero", "trivia", "evoA", "trivia", "evoDa"] : ["nome", "tipo", "evoA", "evoDa", "trivia", "nome", "trivia"];
+  const out = [], viste = new Set(); let tent = 0, i = 0;
+  const gens = mescola(ordine);
+  while (out.length < n && tent++ < 200) {
+    const q = GEN[gens[i++ % gens.length]](dura);
+    if (!viste.has(q.q)) { viste.add(q.q); out.push(q); }
+  }
+  return out;
+}
+function giocoQuizGenerico(corpo, fine, N, dura) {
+  const domande = generaQuiz(N, dura); let i = 0, giuste = 0, rispondi = true;
+  const mostra = () => {
+    const q = domande[i]; rispondi = true;
+    corpo.innerHTML = `<div class="hud"><span>❓ Domanda <b>${i + 1}</b>/${N}</span><span>✅ Giuste: <b>${giuste}</b></span></div>
+      <div id="qArt"></div><div class="quiz-q">${q.q}</div><div class="quiz-opz"></div><div class="msg" id="qMsg"></div><div id="qAvanti"></div>`;
+    if (q.art) $("#qArt").appendChild(creaArt(q.art, 190));
+    const box = $(".quiz-opz", corpo);
+    q.opz.forEach((o, k) => {
+      const b = document.createElement("button"); b.className = "opz"; b.textContent = o;
+      b.onclick = () => {
+        if (!rispondi) return; rispondi = false;
+        const ok = k === q.giusta; if (ok) giuste++;
+        b.classList.add(ok ? "giusta" : "sbagliata"); if (!ok) $$(".opz", box)[q.giusta].classList.add("giusta");
+        ok ? suoni.ok() : suoni.no();
+        $("#qMsg").className = "msg " + (ok ? "ok" : "no");
+        $("#qMsg").textContent = ok ? casuale(["Esatto! 🎉", "Giusto! ⭐", "Bravissimo! 👏", "Grande Allenatore! 🌟"]) : casuale(["Quasi! Ora lo sai! 💡", "Non è questa… la prossima! 💪"]);
+        const av = document.createElement("button"); av.className = "btn grande"; av.textContent = i + 1 === N ? "🏁 Vedi il risultato" : "Avanti ➡";
+        av.onclick = () => { suoni.tap(); if (i + 1 === N) fine(giuste / N * 100); else { i++; mostra(); } };
+        $("#qAvanti").appendChild(av);
+      };
+      box.appendChild(b);
+    });
+  };
+  mostra();
+}
+const giocoQuiz = (c, f) => giocoQuizGenerico(c, f, 5, false);
+const giocoQuizHard = (c, f) => giocoQuizGenerico(c, f, 7, true);
+
+/* =========================================================
+   MINI-GIOCO 4: LANCIA LA POKÉ BALL (Grotta) – timing
+   ========================================================= */
+function giocoPalla(corpo, fine) {
+  const P = partita, LANCI = 5, PERIODI = [2.6, 2.3, 2.0, 1.7, 1.45];
+  let n = 0, punti = [], attivo = false, t0 = 0;
+  corpo.innerHTML = `<div class="hud"><span>⚾ Lancio <b id="pLancio">1</b>/${LANCI}</span><span>⭐ Punti: <b id="pTot">0</b></span></div>
+    <div class="campo" id="campo"><div class="bersaglio"></div><div class="anello" id="anello"></div><div class="lancio" id="ballaL"></div></div>
+    <div class="msg" id="pMsg"></div><button class="btn rosso big-tocca" id="btnLancia">⚾ LANCIA!</button>`;
+  const campo = $("#campo"), anello = $("#anello"), ball = $("#ballaL");
+  campo.insertBefore(creaArt(P.dex, "46%", "selvatico"), campo.firstChild);
+  const scala = () => { const T = PERIODI[n] * 1000, ph = ((performance.now() - t0) / T) % 1, tri = ph < .5 ? ph * 2 : 2 - ph * 2; return 2.2 - tri * 1.7; };
+  const colore = s => { const d = Math.abs(s - 1); return d < .14 ? "verde" : d < .32 ? "giallo" : ""; };
+  function frame() {
+    if (!attivo) return;
+    const s = scala(); anello.style.transform = `scale(${s})`; anello.className = "anello " + colore(s);
+    P.raf = requestAnimationFrame(frame);
+  }
+  function inizia() {
+    ball.classList.remove("vola"); void ball.offsetWidth; $("#pMsg").textContent = "Aspetta il verde…"; $("#pMsg").className = "msg";
+    t0 = performance.now() - Math.random() * PERIODI[n] * 400; attivo = true; frame();
+  }
+  function lancia() {
+    if (!attivo || P.finito) return; attivo = false; cancelAnimationFrame(P.raf);
+    const s = scala(), d = Math.abs(s - 1);
+    const pt = d < .06 ? 100 : Math.max(0, Math.round(100 - (d - .06) * 250)); punti.push(pt);
+    anello.style.transform = `scale(${s})`; ball.classList.add("vola"); suoni.tap();
+    const tot = punti.reduce((a, b) => a + b, 0);
+    ritardo(() => {
+      $("#pTot").textContent = Math.round(tot / punti.length);
+      const m = $("#pMsg"); m.className = "msg " + (pt >= 60 ? "ok" : "no");
+      m.textContent = pt >= 90 ? "PERFETTO! 🎯" : pt >= 60 ? "Ottimo! 👏" : pt >= 30 ? "Buono! 🙂" : (s > 1 ? "Troppo presto! 😅" : "Troppo tardi! 😅");
+      pt >= 60 ? suoni.ok() : suoni.no();
+    }, 450);
+    ritardo(() => { n++; if (n >= LANCI) fine(punti.reduce((a, b) => a + b, 0) / LANCI); else { $("#pLancio").textContent = n + 1; inizia(); } }, 1500);
+  }
+  $("#btnLancia").addEventListener("pointerdown", e => { e.preventDefault(); lancia(); });
+  campo.addEventListener("pointerdown", e => { e.preventDefault(); lancia(); });
+  ritardo(inizia, 600);
+}
+
+/* =========================================================
+   MINI-GIOCO 5: PUZZLE (Spiaggia) – scambia i pezzi
+   ========================================================= */
+function giocoPuzzle(corpo, fine) {
+  const P = partita, N = 9, carta = cartaRappresentativa(P.dex);
+  // Numero minimo di scambi = N - numero di cicli della permutazione
+  const minScambi = ord => { const vis = new Array(N).fill(false); let cicli = 0; for (let i = 0; i < N; i++) { if (vis[i]) continue; cicli++; let j = i; while (!vis[j]) { vis[j] = true; j = ord[j]; } } return N - cicli; };
+  let ord; do { ord = mescola([...Array(N).keys()]); } while (minScambi(ord) < 5);
+  const minimo = minScambi(ord); let mosse = 0, sel = -1, bloccato = false, img = "";
+  corpo.innerHTML = `<div class="hud"><span>🔁 Scambi: <b id="zMosse">0</b></span><span>🎯 Minimo possibile: ${minimo}</span></div><div class="msg" id="zMsg">Tocca due pezzi per scambiarli!</div>
+    <div class="puz-wrap"><div class="puz" id="puz"></div><div class="modello" id="modello" title="Modello"></div></div>`;
+  const puz = $("#puz"), pezzi = [];
+  function disegna() {
+    pezzi.forEach((b, pos) => {
+      const id = ord[pos], col = id % 3, riga = Math.floor(id / 3);
+      b.style.backgroundImage = img ? `url("${img}")` : ""; b.style.backgroundPosition = `${col * 50}% ${riga * 50}%`;
+      b.classList.toggle("sel", pos === sel); b.classList.toggle("giusto", id === pos);
+    });
+  }
+  for (let pos = 0; pos < N; pos++) {
+    const b = document.createElement("button"); b.className = "pezzo"; b.setAttribute("aria-label", "Pezzo " + (pos + 1));
+    b.onclick = () => {
+      if (bloccato) return; suoni.tap();
+      if (sel < 0) sel = pos; else if (sel === pos) sel = -1;
+      else { [ord[sel], ord[pos]] = [ord[pos], ord[sel]]; sel = -1; mosse++; $("#zMosse").textContent = mosse;
+        if (ord.every((v, i) => v === i)) { bloccato = true; disegna(); suoni.ok(); $("#zMsg").textContent = "Completato! 🎉"; $("#zMsg").className = "msg ok"; fine(Math.max(20, 100 - (mosse - minimo) * 8)); return; } }
+      disegna();
+    };
+    puz.appendChild(b); pezzi.push(b);
+  }
+  urlImmagine(carta, "low").then(u => { const t = new Image(); t.onload = () => { img = u; $("#modello").style.backgroundImage = `url("${u}")`; disegna(); };
+    t.onerror = () => { img = segnaposto(carta); $("#modello").style.backgroundImage = `url("${img}")`; disegna(); }; t.src = u; });
+  disegna();
+}
+
+/* =========================================================
+   MINI-GIOCO 6: SIMON (Montagna)
+   ========================================================= */
+function giocoSimon(corpo, fine) {
+  const P = partita, COL = ["r", "b", "v", "g"], FREQ = [261, 329, 392, 523], ROUND = 7;
+  let vite = 2, round = 0, seq = [], input = null;
+  corpo.innerHTML = `<div class="hud"><span>🎵 Round <b id="sRound">1</b>/${ROUND}</span><span id="sVite">❤️❤️</span></div><div class="msg" id="sMsg">Guarda bene!</div>
+    <div class="simon" id="simon">${COL.map((c, i) => `<button class="pad ${c}" data-i="${i}" aria-label="Colore ${i + 1}"></button>`).join("")}<div class="simon-centro" id="sCentro">👀</div></div>`;
+  const pad = $$(".pad", corpo), msg = t => { $("#sMsg").textContent = t; };
+  const vivo = () => partita === P && !P.finito;
+  const suona = async (i, dur) => { pad[i].classList.add("acceso"); nota(FREQ[i], dur / 1000, "triangle", .16); await attesa(dur); pad[i].classList.remove("acceso"); };
+  pad.forEach((p, i) => p.addEventListener("pointerdown", e => { e.preventDefault(); if (!input) return; suona(i, 180); input(i); }));
+  (async function ciclo() {
+    await attesa(700);
+    while (vivo()) {
+      if (seq.length === round) seq.push(Math.floor(Math.random() * 4));
+      $("#sRound").textContent = round + 1; $("#sCentro").textContent = "👀"; msg("Guarda bene!"); $("#sMsg").className = "msg";
+      await attesa(500); const dur = Math.max(260, 520 - round * 40);
+      for (const i of seq) { if (!vivo()) return; await suona(i, dur); await attesa(170); }
+      if (!vivo()) return; $("#sCentro").textContent = "👆"; msg("Tocca a te!");
+      const ok = await new Promise(res => { let k = 0; input = i => { if (!vivo()) return res(false); if (i !== seq[k]) { input = null; res(false); } else if (++k === seq.length) { input = null; res(true); } }; });
+      input = null; if (!vivo()) return;
+      if (ok) {
+        round++; suoni.ok(); $("#sMsg").className = "msg ok"; msg(casuale(["Giusto! 🎉", "Che orecchio! 👂", "Bravo! ⭐"]));
+        if (round >= ROUND) { fine(100); return; }
+      } else {
+        vite--; suoni.no(); $("#sVite").textContent = "❤️".repeat(vite) + "🖤".repeat(2 - vite); $("#sMsg").className = "msg no";
+        if (vite <= 0) { msg("Peccato! 😢"); fine(round / ROUND * 100); return; }
+        msg("Ops! Riprova! 💪");
+      }
+      await attesa(1100);
+    }
+  })();
+}
+
+/* =========================================================
+   AVVIO
+   ========================================================= */
+function init() {
+  stato = carica(); controllaGiorno(); aggiornaUI();
+  $$("[data-vai]").forEach(b => b.addEventListener("click", () => { suoni.tap(); vai(b.dataset.vai); }));
+  $("#btnCaccia").onclick = () => { suoni.clic(); vai("mappa"); };
+  $("#btnAlbum").onclick = () => { suoni.clic(); vai("album"); };
+  $("#btnTutorial").onclick = () => { suoni.tap(); mostraTutorial(); };
+  $("#btnPremi").onclick = () => { suoni.tap(); mostraPremi(); };
+  $("#btnSuono").onclick = () => { stato.suono = !stato.suono; salva(); aggiornaUI(); suoni.ok(); };
+  $("#btnImp").onclick = () => { suoni.tap(); apriImpostazioni(); };
+  // Ricarica a mezzanotte: controllo periodico e quando l'app torna in primo piano
+  setInterval(controllaGiorno, 15000);
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) controllaGiorno(); });
+  window.addEventListener("focus", controllaGiorno);
+  window.addEventListener("online", () => setTimeout(precaricaImmagini, 500));
+  document.addEventListener("pointerdown", () => audio(), { once: true });
+  vai("home");
+  if (!stato.tutorialFatto) setTimeout(mostraTutorial, 400);
+  setTimeout(precaricaImmagini, 2500);
+}
+init();
+
+</script>
+</body>
+</html>
